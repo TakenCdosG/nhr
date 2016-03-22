@@ -1,0 +1,17 @@
+/*
+ Theme Name: StanleyWP Child
+ Theme URI: http://gentsthemes.com
+ Description: Responsive WordPress theme with all the Twitter Bootstrap elements and features.
+ Author: Brad Williams & Carlos Alvarez & Carlos Alvarez
+ Template: stanleywp
+ Author URI: http://gentsthemes.com
+ Version: 3.0.3
+ Copyright (C) 2011-2014 Gents Themes
+ License: GNU General Public License, version 3 (GPLv3)
+ License URI: license.txt
+*/
+
+
+#footer{
+    background-color: #272779;
+}
