@@ -53,9 +53,22 @@
     <?php gents_in_header(); // header hook ?>
 <div id="top-header">
     <div class="container">
-        <?php dynamic_sidebar('top-header'); ?>
-        <a href="facebook.com"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/facebook.png" alt="NHR properties Facebook"></a>
-        <a href="twitter.com"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/twitter.png" alt="NHR properties twitter"></a>
+        <?php
+        $args = array(
+            'theme_location' => 'secondary-menu',
+            'depth'      => 2,
+            'container'  => false,
+            'menu_class'     => 'widget-wrapper widget_nav_menu',
+            'walker'     => new Bootstrap_Walker_Nav_Menu()
+        );
+
+        wp_nav_menu($args);
+        ?>
+        <?php dynamic_sidebar('header-bar'); ?>
+        <div class="social_icons widget-wrapper">
+            <a href="http://facebook.com" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/facebook.png" alt="NHR properties Facebook"></a>
+            <a href="http://twitter.com" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/twitter.png" alt="NHR properties twitter"></a>
+        </div>
     </div>
 </div>
 <nav role="navigation">
@@ -71,7 +84,6 @@
         </div>
           <div class="navbar-collapse collapse navbar-responsive-collapse">
 			   <?php
-
                 $args = array(
                     'theme_location' => 'top-bar',
                     'depth'      => 2,
@@ -79,9 +91,7 @@
                     'menu_class'     => 'nav navbar-nav navbar-right',
                     'walker'     => new Bootstrap_Walker_Nav_Menu()
                 );
-
                 wp_nav_menu($args);
-
             ?>
 
           </div>

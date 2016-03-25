@@ -24,13 +24,40 @@
 <footer id="footer">
 <div class="container">
       <div class="row">
-        <div class="col-lg-4">
+        <div class="col-lg-6">
+            <?php
+            $args = array(
+                'theme_location' => 'top-bar',
+                'depth'      => 2,
+                'container'  => false,
+                'menu_class'     => 'col-lg-4 widget-wrapper widget_nav_menu',
+                'walker'     => new Bootstrap_Walker_Nav_Menu()
+            );
+            wp_nav_menu($args);
+            ?>
+            <?php
+            $args = array(
+                'theme_location' => 'secondary-menu',
+                'depth'      => 2,
+                'container'  => false,
+                'menu_class'     => 'col-lg-4 widget-wrapper widget_nav_menu',
+                'walker'     => new Bootstrap_Walker_Nav_Menu()
+            );
+            wp_nav_menu($args);
+            ?>
+            <div class="col-lg-4 signup-form widget-wrapper">
+                <form>
+                    <input type="text" placeholder="Email signup">
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+
           <?php dynamic_sidebar('footer-left'); ?>
         </div>
-        <div class="col-lg-4">
-          <?php dynamic_sidebar('footer-middle'); ?>
-        </div>
-        <div class="col-lg-4">
+<!--        <div class="col-lg-4">
+          <?php /*dynamic_sidebar('footer-middle'); */?>
+        </div>-->
+        <div class="col-lg-6">
           <?php dynamic_sidebar('footer-right'); ?>
         </div>
       
