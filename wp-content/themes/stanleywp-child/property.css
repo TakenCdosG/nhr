@@ -1,0 +1,57 @@
+/* SINGLE PROPERTY*/
+.single-property{
+    margin-top:45px; 
+    margin-bottom:45px;
+}
+.single-property p{
+    margin-bottom: 35px;
+}
+.single-property span{
+    display: block;
+    margin-bottom: 12px;
+}
+.single-property ul{
+    list-style-type: disc; 
+    padding:0 15px;
+}
+.single-property .button{
+    width:100%;
+    background-color: #272779;
+    text-transform: uppercase;
+    padding:20px;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+.single-property .button a{
+    color:#ffffff;
+    text-decoration: none;
+}
+.single-property .block_one{
+    background-color:#dbdbdb;
+    padding: 20px;
+}
+.single-property .block_one ul {
+    -moz-column-count: 2;
+    -moz-column-gap: 20px;
+    -webkit-column-count: 2;
+    -webkit-column-gap: 20px;
+    column-count: 2;
+    column-gap: 20px;
+    list-style-position: inside;
+}
+.single-property .block_one ul li{
+    margin-bottom: 15px;
+}
+.single-property .block_two{
+    background-color:#999999;
+    padding: 20px 35px;
+}
+.single-property .block_two a{
+    color:#ffffff;
+    margin-bottom: 6px;
+    font-size: 16px;
+    text-decoration: underline;
+    display: block;
+    clear: both;
+}
