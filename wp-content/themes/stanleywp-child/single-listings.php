@@ -23,13 +23,13 @@
 
       <div class="container single-property">
         <div class="row">
-          <div class="col-lg-8">
+          <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
             <h2><?php the_title(); ?></h2>
             <br/>
             <?php the_content(); ?>
             <br/>
             <div class="row">
-              <div class="col-lg-4">
+              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                 <span><strong>Features</strong></span>
                 <ul style="list-style-type: disc; padding:0 15px;">
                   <?php $feature = get_post_meta($post->ID, 'features'); 
@@ -40,7 +40,7 @@
                   ?>
                 </ul>
               </div>
-              <div class="col-lg-4">
+              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                 <span><strong>Services</strong></span>
                 <ul>
                   <?php $service = get_post_meta($post->ID, 'services'); 
@@ -51,7 +51,7 @@
                   ?>
                 </ul>
               </div>
-              <div class="col-lg-4">
+              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                 <span><strong>Property Information</strong></span>
                 <?php echo get_post_meta($post->ID, 'property_information', true); ?>
                 <br/>
@@ -63,9 +63,11 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
             <div class="button">
-              <a href="<?php echo wp_get_attachment_url(get_post_meta($post->ID, 'apply_now', true)); ?>" target="_blank">
+              <?php $href = wp_get_attachment_url(get_post_meta($post->ID, 'apply_now', true)); 
+              ?>
+              <a href="<?php echo $href != "" ? $href : "#" ?>" target="<?php echo $href != "" ? "_blank" : "_self" ?>">
                 <?php echo get_post_meta($post->ID, 'apply_now_button', true); ?>
               </a>
             </div>

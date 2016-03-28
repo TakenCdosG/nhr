@@ -55,3 +55,66 @@
     display: block;
     clear: both;
 }
+
+/* ALL LISTINGS*/
+.all-properties h2{
+    margin:36px 0;
+    text-transform: uppercase;
+}
+.all-properties img .image{
+    width:100%;
+    height:auto;
+    background-size: cover;
+}
+.property-list{
+    padding:29px 0;
+}
+.property-list:nth-child(even) {
+    background-color: #f1f1f1;
+    border-top: 7px solid #dbdbdb;
+}
+.property-list h3{
+    margin-top:0;
+}
+a.more{
+    text-decoration: none;
+    background-color: #e47818;
+    color:#fff;
+    font-size: 14px;
+    padding:8px 17px;
+}
+a.more:hover{
+    text-decoration: none;
+}
+.excerpt div{
+    margin-top:22px;
+}
+.callto{
+    background-color:#616165;
+    padding: 50px 40px;
+    margin:20px 0 50px 0;
+}
+.callto p, .callto h3, .callto a, .callto a:hover{
+    text-decoration: none;
+    color:#fff;
+}
+.callto .button{
+    text-align: center;
+    margin-top:15px;
+    font-size: 20px;
+    padding:20px 15px;
+    color:#fff;
+    background-color: #e47818;
+}
+
+@media screen and (max-width: 767px) {
+    .single-property .button{
+        margin-top:40px;
+    }
+    .property-item img{
+        margin-bottom: 20px;
+    }
+    .callto a{
+        font-size: 16px;
+    }
+}
