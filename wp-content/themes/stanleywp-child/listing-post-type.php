@@ -6,9 +6,9 @@ add_post_type_support( 'properties', 'thumbnail' );
 /*
 * NEW THUMB SIZE
 */
-update_option( 'thumbnail_size_w', 800 );
-update_option( 'thumbnail_size_h', 420 );
-update_option( 'thumbnail_crop', 1 );
+update_option( 'medium_size_w', 800 );
+update_option( 'medium_size_h', 420 );
+update_option( 'medium_crop', 1 );
 
 
 //Properties Custom Post Type

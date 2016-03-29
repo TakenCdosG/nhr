@@ -2,7 +2,7 @@
 /*
 Title: Excerpt
 Post Type: properties
-Order: 1
+Order: 0
 */
 ?>
 

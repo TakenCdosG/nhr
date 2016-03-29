@@ -46,10 +46,10 @@
             </div>
             <?php
               }
-              if (get_post_meta($post->ID, 'basic_image', true) != ""){
+              if (get_post_meta($post->ID, 'basic_image_img', true) != ""){
             ?>
             <div class="basic_image">
-              <?php echo wp_get_attachment_image(get_post_meta($post->ID, 'basic_image', true), 'full' ); ?>
+              <?php echo wp_get_attachment_image(get_post_meta($post->ID, 'basic_image_img', true), 'full' ); ?>
             </div>
             <?php
               }

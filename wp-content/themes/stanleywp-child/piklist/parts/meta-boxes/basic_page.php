@@ -34,8 +34,8 @@ piklist('field', array(
 <?php
 piklist('field', array(
   'type' => 'file'
-  ,'field' => 'basic_image'
-  ,'label' => 'Add File'
+  ,'field' => 'basic_image_img'
+  ,'label' => 'Page Image'
 ));
 
 ?>
