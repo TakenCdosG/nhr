@@ -99,7 +99,7 @@
      </div>           
 </nav>
            
- <div id="header_slider" class="fotorama" data-maxheight="500" data-width="100%" data-fit="cover">
+ <div id="header_slider" class="fotorama" data-maxheight="500" data-width="100%" data-fit="cover" data-nav="false">
          <?php
          $my_id = $wpdb->get_var("SELECT ID FROM $wpdb->posts WHERE post_name = 'home'");
          $image_ids = get_post_meta($post->ID, 'upload_media',true);
