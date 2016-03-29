@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Featured
+ * Template Name: All Properties
  */
 get_header(); 
 ?>
@@ -38,7 +38,7 @@ get_header();
               <div class="excerpt" style="margin-bottom:15px;">
                 <?php echo wpautop(get_post_meta($post->ID, 'excerpt', true)); ?>
                 <div><a class="more" href="<?php the_permalink(); ?>"><?php if(have_posts()) : while(have_posts()) : the_post(); echo get_post_meta($post->ID, 'learn_more', true); endwhile; endif;?></a></div>
-              </div> 
+              </div>
             </div>
           <div style="clear:both;"></div>
           </div>

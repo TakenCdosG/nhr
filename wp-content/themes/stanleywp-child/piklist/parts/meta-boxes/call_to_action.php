@@ -10,7 +10,7 @@ Template: featured
 <?php
 piklist('field', array(
  'type' => 'text'
- ,'field' => 'call'
+ ,'field' => 'callto_title'
  ,'label' => 'Title'
  ,'description' => 'This is title for the Call to Action section.'
  ,'attributes' => array(

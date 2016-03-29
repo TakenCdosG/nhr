@@ -1,9 +1,8 @@
 <?php
-//Listings Custom Post Type
 
 // This theme uses post thumbnails
 add_theme_support('post-thumbnails');
-add_post_type_support( 'listings', 'thumbnail' );
+add_post_type_support( 'properties', 'thumbnail' );
 /*
 * NEW THUMB SIZE
 */
@@ -12,30 +11,32 @@ update_option( 'thumbnail_size_h', 420 );
 update_option( 'thumbnail_crop', 1 );
 
 
+//Properties Custom Post Type
+
 function create_posttype() {
 
-register_post_type( 'listings',
+register_post_type( 'properties',
 // CPT Options
 array(
 'labels' => array(
-'name' => __( 'Listings' ),
-'singular_name' => __( 'Listing' ),
-'menu_name'           => __( 'Listings', 'NHR' ),
-'parent_item_colon'   => __( 'Parent Listing', 'NHR' ),
-'all_items'           => __( 'All Listings', 'NHR' ),
-'view_item'           => __( 'View Listing', 'NHR' ),
-'add_new_item'        => __( 'Add New Listing',  'NHR' ),
-'add_new'             => __( 'Add New Listing', 'NHR' ),
-'edit_item'           => __( 'Edit Listing', 'NHR' ),
-'update_item'         => __( 'Update Listing', 'NHR' ),
-'search_items'        => __( 'Search Listing', 'NHR' ),
-'not_found'           => __( 'Not Listing Found', 'NHR' ),
-'not_found_in_trash'  => __( 'Not Listing Found in Trash', 'NHR' )
+'name' => __( 'Properties' ),
+'singular_name' => __( 'Property' ),
+'menu_name'           => __( 'Properties', 'NHR' ),
+'parent_item_colon'   => __( 'Parent Property', 'NHR' ),
+'all_items'           => __( 'All Properties', 'NHR' ),
+'view_item'           => __( 'View Property', 'NHR' ),
+'add_new_item'        => __( 'Add New Property',  'NHR' ),
+'add_new'             => __( 'Add New Property', 'NHR' ),
+'edit_item'           => __( 'Edit Property', 'NHR' ),
+'update_item'         => __( 'Update Property', 'NHR' ),
+'search_items'        => __( 'Search Property', 'NHR' ),
+'not_found'           => __( 'Not Property Found', 'NHR' ),
+'not_found_in_trash'  => __( 'Not Property Found in Trash', 'NHR' )
 
 ),
 'public' => true,
 'has_archive' => true,
-'rewrite' => array('slug' => 'listings'),
+'rewrite' => array('slug' => 'properties'),
 'menu_position' => 5,
 'menu_icon' => get_stylesheet_directory_uri() . "/images/listings.png",
 )
@@ -54,8 +55,8 @@ function custom_post_type() {
 // Set other options for Custom Post Type
 
 $args = array(
-'label'               => __( 'Listings', 'NHR' ),
-'description'         => __( 'Listings', 'NHR' ),
+'label'               => __( 'Properties', 'NHR' ),
+'description'         => __( 'Properties', 'NHR' ),
 'labels'              => $labels,
 // Features in Post Editor
 'supports'            => array( 'title', 'author', 'comments'  ),
@@ -80,7 +81,7 @@ $args = array(
 );
 
 // Registering Custom Post Type
-register_post_type( 'listings', $args );
+register_post_type( 'properties', $args );
 
 }
 
@@ -93,11 +94,69 @@ add_action( 'init', 'custom_post_type', 0 );
 /*
 * Taxonomies
 */
-// Listing Categories
+// Property Categories
 add_action( 'init', 'build_taxonomies', 0 );
 
 function build_taxonomies() {
-register_taxonomy( 'categories', 'listings', array( 'hierarchical' => true, 'label' => 'Listings type', 'query_var' => true, 'rewrite' => true ) );
+register_taxonomy( 'categories', 'properties', array( 'hierarchical' => true, 'label' => 'Property type', 'query_var' => true, 'rewrite' => true ) );
 }
 
+
+//polylang support
+
+add_filter('pll_get_post_types', 'my_pll_get_post_types');
+function my_pll_get_post_types($types) {
+	return array_merge($types, array('properties' => 'properties'));
+}
+
+/*
+* PIKLIST CUSTOM PAGES
+*/
+add_filter('piklist_get_file_data', 'my_custom_comment_block', 10, 2);
+function my_custom_comment_block($data, $type)
+{
+  // If not a Meta-box section than bail
+  if($type != 'meta-boxes')
+  {
+    return $data;
+  }
+ 
+  // Allow Piklist to read our custom comment block attribute: "Hide for Template", and set it to hide_for_template
+  $data['show_for_template'] = 'Show for Template';
+ 
+  return $data;
+}
+
+add_filter('piklist_add_part', 'my_show_for_template', 10, 2);
+function my_show_for_template($data, $type)
+{
+  global $post;
+ 
+  // If not a meta box than bail
+  if($type != 'meta-boxes')
+  {
+    return $data;
+  }
+ 
+  // Check if any page template is set in the comment block
+  if (!empty($data['show_for_template'])) 
+  {
+    // Get the active page template
+    $active_template = pathinfo(get_page_template_slug($post->ID), PATHINFO_FILENAME);
+ 	if($active_template == ""){
+ 		$active_template = "default";
+ 	}
+    // Is there a page template set for this page?
+
+      // Does the active page template match what we want to hide?
+      if (strpos($data['show_for_template'], $active_template) == FALSE or strpos($data['show_for_template'], $active_template) == "")
+      {
+      	$data['role'] = 'no-role';
+        // Change meta-box access to user role: no-role
+         
+      }
+    
+  }
+  return $data;
+}
 ?>

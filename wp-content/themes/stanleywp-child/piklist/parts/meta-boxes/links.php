@@ -1,7 +1,7 @@
 <?php
 /*
 Title: Links
-Post Type: listings
+Post Type: properties
 Order: 7
 */
 ?>

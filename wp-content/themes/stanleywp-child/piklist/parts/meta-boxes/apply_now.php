@@ -1,7 +1,7 @@
 <?php
 /*
 Title: Apply Now
-Post Type: listings
+Post Type: properties
 Order: 5
 */
 ?>

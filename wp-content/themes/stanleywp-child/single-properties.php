@@ -1,16 +1,7 @@
 <?php
 /**
- * Single Listings Template
+ * Single Properties Template
  *
- *
- * @file           single.php
- * @package        StanleyWP
- * @author         Brad Williams & Carlos Alvarez
- * @copyright      2011 - 2014 Gents Themes
- * @license        license.txt
- * @version        Release: 3.0.3
- * @link           http://codex.wordpress.org/Theme_Development#Single_Post_.28single.php.29
- * @since          available since Release 1.0
  */
 ?>
 <?php get_header(); ?>
@@ -23,12 +14,17 @@
 
       <div class="container single-property">
         <div class="row">
-          <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+          <?php $apply_now = get_post_meta($post->ID, 'apply_now', true);  
+                $property_details = get_post_meta($post->ID, 'property_details', true); 
+                $links = get_post_meta($post->ID, 'links', true); 
+          ?>
+          <div class="<?php echo $apply_now == "" && $property_details == "" && $links == "" ? 'col-lg-12' : 'col-lg-8 col-md-8 col-sm-8 col-xs-12' ?> ">
             <h2><?php the_title(); ?></h2>
             <br/>
             <?php the_content(); ?>
             <br/>
             <div class="row">
+              <?php if(get_post_meta($post->ID, 'features', true) != ""){?>
               <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                 <span><strong>Features</strong></span>
                 <ul style="list-style-type: disc; padding:0 15px;">
@@ -40,7 +36,9 @@
                   ?>
                 </ul>
               </div>
-              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+              <?php }
+              if(get_post_meta($post->ID, 'services', true) != ""){?>
+              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" >
                 <span><strong>Services</strong></span>
                 <ul>
                   <?php $service = get_post_meta($post->ID, 'services'); 
@@ -51,19 +49,29 @@
                   ?>
                 </ul>
               </div>
-              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+              <?php }
+              if(get_post_meta($post->ID, 'property_information', true) != ""){?>
+              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" >
                 <span><strong>Property Information</strong></span>
                 <?php echo get_post_meta($post->ID, 'property_information', true); ?>
                 <br/>
+                <?php }
+              if(get_post_meta($post->ID, 'parking', true) != ""){?>
                 <span><strong>Parking</strong></span>
                 <?php echo get_post_meta($post->ID, 'parking', true); ?>
                 <br/>
+                <?php }
+              if(get_post_meta($post->ID, 'outdoor_space', true) != ""){?>
                 <span><strong>Outdoor Space</strong></span>
                 <?php echo get_post_meta($post->ID, 'outdoor_space', true); ?>
               </div>
+              <?php } ?>
             </div>
           </div>
-          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" style ="<?php echo $apply_now == "" && $property_details == "" && $links == "" ? 'display:none;' : 'display:block;' ?> ">
+            <?php 
+              if (get_post_meta($post->ID, 'apply_now_button', true) != ""){
+            ?>
             <div class="button">
               <?php $href = wp_get_attachment_url(get_post_meta($post->ID, 'apply_now', true)); 
               ?>
@@ -71,10 +79,15 @@
                 <?php echo get_post_meta($post->ID, 'apply_now_button', true); ?>
               </a>
             </div>
+            <?php 
+              }
+              if (get_post_meta($post->ID, 'property_details', true) != ""){
+            ?>
             <div class="block_one">
               <?php echo get_post_meta($post->ID, 'property_details', true); ?>
             </div>
-            <?php 
+            <?php
+              }
               if (get_post_meta($post->ID, 'links', true) != ""){
             ?>
             <div class="block_two">

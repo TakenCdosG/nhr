@@ -1,7 +1,7 @@
 <?php
 /*
 Title: Features
-Post Type: listings
+Post Type: properties
 Order: 1
 */
 ?>

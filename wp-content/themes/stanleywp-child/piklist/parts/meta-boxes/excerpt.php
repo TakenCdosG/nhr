@@ -1,7 +1,7 @@
 <?php
 /*
 Title: Excerpt
-Post Type: listings
+Post Type: properties
 Order: 1
 */
 ?>

@@ -1,7 +1,7 @@
 <?php
 /*
 Title: Parking
-Post Type: listings
+Post Type: properties
 Order: 4
 */
 ?>
