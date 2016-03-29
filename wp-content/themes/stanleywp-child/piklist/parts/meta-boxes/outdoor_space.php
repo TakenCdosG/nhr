@@ -1,7 +1,7 @@
 <?php
 /*
 Title: Outdoor Space
-Post Type: listings
+Post Type: properties
 Order: 5
 */
 ?>

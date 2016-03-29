@@ -1,7 +1,7 @@
 <?php
 /*
 Title: Services
-Post Type: listings
+Post Type: properties
 Order: 2
 */
 ?>

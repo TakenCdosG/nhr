@@ -28,8 +28,12 @@
     text-decoration: none;
 }
 .single-property .block_one{
+    word-wrap: break-word;
     background-color:#dbdbdb;
     padding: 20px;
+    font-family: Radikal-Medium;
+    font-weight: normal;
+    font-style: normal;
 }
 .single-property .block_one ul {
     -moz-column-count: 2;
@@ -44,8 +48,12 @@
     margin-bottom: 15px;
 }
 .single-property .block_two{
+    word-wrap: break-word;
     background-color:#999999;
     padding: 20px 35px;
+    font-family: Radikal-Medium;
+    font-weight: normal;
+    font-style: normal;
 }
 .single-property .block_two a{
     color:#ffffff;
@@ -105,6 +113,54 @@ a.more:hover{
     padding:20px 15px;
     color:#fff;
     background-color: #e47818;
+}
+
+/* BASIC PAGE */
+
+.single-property .block_one.basic{
+    background-color:#999999;
+    color: #ffffff;
+    padding: 20px 35px;
+}
+.single-property .block_one.basic p, .single-property .block_two.basic p{
+    margin-bottom: 12px;
+}
+.single-property .block_one.basic p:first-child{
+    font-size:18px;
+}
+.single-property .block_two.basic p:first-child{
+    font-size:18px;
+    color:#272779;
+}
+.single-property .block_two.basic{
+    background-color:#dbdbdb;
+    padding:20px 35px;    
+}
+.single-property .block_two.basic ul li{
+    margin-bottom: 15px;
+}
+.single-property .block_two.basic ul {
+    -moz-column-count: 2;
+    -moz-column-gap: 20px;
+    -webkit-column-count: 2;
+    -webkit-column-gap: 20px;
+    column-count: 2;
+    column-gap: 20px;
+    list-style-position: inside;
+    padding: 0;
+}
+.basic_image{
+    margin-top:87px;
+}
+.basic.button{
+    display: inline;
+    width: auto;
+    padding:10px 100px;
+}
+.button{
+    font-family: Radikal-Light;
+    font-weight: normal;
+    font-style: normal;
 }
 
 @media screen and (max-width: 767px) {

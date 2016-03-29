@@ -11,10 +11,9 @@
  License URI: license.txt
 */
 @import url("property.css");
+@import url("webfont/radikal.css");
 
 /* TOP HEADER  */
-
-
 #top-header {
     background-color: #272779;
     border-bottom: solid 7px #3F3F98;
@@ -144,6 +143,14 @@ nav, .navbar-inverse {
 
 #header_slider{
     width: 100%;
+}
+
+/* font family */
+h2, h3{
+    font-family: Radikal-Medium;
+    font-weight: normal;
+    font-style: normal;
+    color:#272779;
 }
 
 /* Small devices (tablets, 768px and up) */
