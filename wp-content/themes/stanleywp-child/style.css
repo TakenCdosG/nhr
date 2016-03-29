@@ -140,6 +140,13 @@ nav, .navbar-inverse {
     padding-top: 25px;
 }
 
+/* Header Slider */
+
+#header_slider{
+    width: 100%;
+    height: 500px;
+}
+
 /* Small devices (tablets, 768px and up) */
 @media (min-width:768px) {
 
@@ -151,3 +158,4 @@ nav, .navbar-inverse {
     }
 
 }
+
