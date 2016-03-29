@@ -101,24 +101,16 @@
            
  <div id="header_slider" class="fotorama" data-maxheight="500" data-width="100%" data-fit="cover">
          <?php
+         $my_id = $wpdb->get_var("SELECT ID FROM $wpdb->posts WHERE post_name = 'home'");
          $image_ids = get_post_meta($post->ID, 'upload_media',true);
          if ($image_ids == "") {
-             $image_ids = get_post_meta(31, 'upload_media');
+             $image_ids = get_post_meta($my_id, 'upload_media');
          }else {
              $image_ids = get_post_meta($post->ID, 'upload_media');
          }
          foreach ($image_ids as $image)
          {
              $myupload = get_post($image);
-             /*
-             $title = $myupload->post_title;
-             $description = $myupload->post_content;
-             $caption = $myupload->post_excerpt;
-              echo 'title:' . $title;
-              echo 'description:' . $description;
-              echo 'caption:' . $caption;
-             */
-
             $alt_text = get_post_meta($image, '_wp_attachment_image_alt', true);
              echo '<img  src="' . wp_get_attachment_url($image) . '" alt="'.$alt_text.'" />';
          }

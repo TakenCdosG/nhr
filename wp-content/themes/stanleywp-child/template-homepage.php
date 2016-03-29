@@ -9,8 +9,13 @@ get_header();
 <div id="content">
     <div class="container">
         <div class="row">
-            <h2><?php the_title();?></h2>
-            <?php the_content(); ?> asdf asd
+            <div class="col-lg-6 col-xs-12">
+
+            </div>
+            <div class="col-lg-6 col-xs-12">
+                <h2><?php the_title();?></h2>
+                <?php the_content(); ?>
+            </div>
         </div>
     </div>
 </div><!-- end of #content -->

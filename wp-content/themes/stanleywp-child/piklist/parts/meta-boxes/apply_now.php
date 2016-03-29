@@ -25,5 +25,3 @@ piklist('field', array(
 ));
 
 ?>
-
-
