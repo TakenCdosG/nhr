@@ -13,16 +13,9 @@ get_header();
   </div>
   <?php 
   $args = array(
-    numberposts=> -1,
-    offset=> 0,
-    post_type=> "properties",
-    'tax_query' => array(
-      array(
-        'taxonomy' => 'categories',
-        'field' => 'slug',
-        'terms' => 'featured'
-      )
-    )
+    'numberposts'=> -1,
+    'offset'=> 0,
+    'post_type'=> "properties"
   );
   $myposts = get_posts( $args );
   foreach( $myposts as $post) : setup_postdata( $post ) ?>

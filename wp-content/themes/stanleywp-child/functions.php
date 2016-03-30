@@ -13,7 +13,48 @@ function theme_enqueue_styles() {
 }
 add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles' );
 
+/**
+   * Load front-end scripts
+   *
+   */
+    function enqueue_scripts() {
 
+    // jQuery
+    
+    wp_enqueue_script(
+      'wpex-plugins',
+      get_stylesheet_directory_uri() .'/js/plugins.js',
+      array( 'jquery' )
+    );
+    wp_enqueue_script(
+      'wpex-global',
+      get_stylesheet_directory_uri() .'/js/global.js',
+      array( 'jquery' )
+    );
+    //Caroufredsel Assets
+    wp_enqueue_script(
+      'wpex-global',
+      get_stylesheet_directory_uri() .'/js/helper-plugins/jquery.ba-throttle-debounce.min.js',
+      array( 'jquery')
+    );
+    wp_enqueue_script(
+      'wpex-global',
+      get_stylesheet_directory_uri() .'/js/helper-plugins/jquery.mousewheel.min.js',
+      array( 'jquery' )
+    );
+    wp_enqueue_script(
+      'wpex-global',
+      get_stylesheet_directory_uri() .'/js/helper-plugins/jquery.touchSwipe.min.js',
+      array( 'jquery')
+    );
+    wp_enqueue_script(
+      'wpex-global',
+      get_stylesheet_directory_uri() .'/js/helper-plugins/jquery.transit.min.js',
+      array( 'jquery' )
+    );
+
+  }
+add_action( 'wp_enqueue_scripts', 'enqueue_scripts' );
 /**
  * WordPress Widgets start right here.
  */
