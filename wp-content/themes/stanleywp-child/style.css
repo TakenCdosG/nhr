@@ -270,9 +270,13 @@ h2, h3{
 }
 .home .text-information{
     overflow:hidden;
-    height: 110px;
-    line-height: 28px;
+    height: 100px;
+    line-height: 20px;
 
+}
+
+.home .text-information p {
+    line-height: 20px;
 }
 /* Small devices (tablets, 768px and up) */
 @media (min-width:768px) {
