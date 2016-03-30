@@ -229,20 +229,49 @@ h2, h3{
 
 .property-item:hover h3{
     color: #E37718;
-}
-.property-item:hover .property-tiem-information{
-    display: block;
-}
-.property-tiem-information{
-    /*display: none; */
+    background-image: url("images/bg_featured_home_title.png");
+    background-repeat: no-repeat;
+    background-position: center -2px ;
+
 }
 
-.property-tiem-information a.more {
+.property-item:hover .property-item-information, .property-item:hover .property-item-background{
+    display: block;
+}
+
+.property-item-information, .property-item-background{
+    display: none; 
+    height: 228px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: transparent;
+}
+.property-item-information{
+    color: #FFFFFF;
+    padding: 50px 10% 30px 10%;
+    font-size: 18px;
+    font-family: Radikal-Medium;
+}
+.property-item-background{
+    background-color: #272779;
+    opacity: 0.62;
+    filter: alpha(opacity=62); /* For IE8 and earlier */
+}
+
+.property-item-information a.more {
     padding: 4px 14px;
     display: block;
     width: 106px;
+    position: absolute;
+    bottom: 29px;
+    font-family: Radikal-Bold;
 }
-
+.text-information{
+    overflow: hidden;
+    height: 110px;
+}
 /* Small devices (tablets, 768px and up) */
 @media (min-width:768px) {
 
