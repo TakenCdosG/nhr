@@ -13,9 +13,9 @@ get_header();
   </div>
   <?php 
   $args = array(
-    numberposts=> -1,
-    offset=> 0,
-    post_type=> "properties",
+    'numberposts'=> -1,
+    'offset'=> 0,
+    'post_type'=> "properties",
     'tax_query' => array(
       array(
         'taxonomy' => 'categories',

@@ -49,9 +49,9 @@
                   ?>
                 </ul>
               </div>
-              <?php }
-              if(get_post_meta($post->ID, 'property_information', true) != ""){?>
+              <?php } ?>
               <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" >
+                <?php if(get_post_meta($post->ID, 'property_information', true) != ""){?>
                 <span><strong>Property Information</strong></span>
                 <?php echo get_post_meta($post->ID, 'property_information', true); ?>
                 <br/>
@@ -66,6 +66,42 @@
                 <?php echo get_post_meta($post->ID, 'outdoor_space', true); ?>
               </div>
               <?php } ?>
+            </div>
+            <div style="margin-top:20px;">
+              <ul class="single_thumbnails ">
+                <div class="carouf">
+                  <div class="list_carousel">
+                    <ul id="carousel">
+                      <?php
+                      $attachments = get_post_meta($post->ID, 'property_gallery');
+                      // Loop through each attachment ID
+                      foreach ( $attachments as $attachment ) :
+                        $img_url  = wp_get_attachment_url( $attachment );
+                        $img_alt  = get_post_meta( $attachment, '_wp_attachment_image_alt', true );
+                        $img_html = wp_get_attachment_image( $attachment, 'medium' ); 
+                        if($img_url != ""){
+                        ?>
+                        <li style="width:100px;">
+                          <?php
+                          // Display image with lightbox
+                          if ( $img_url != "" ) : ?>
+                            <a rel="prettyPhoto[Gallery]" href="<?php echo $img_url; ?>" title="<?php echo $img_alt; ?>" class="wpex-lightbox">
+                              <?php echo $img_html; ?>
+                            </a>
+                          <?php
+                          // Lightbox is disabled, only show image
+                          else : ?>
+                            <?php echo $img_html != "" ? $img_html : ""; ?>
+                          <?php endif; ?>
+                        </li>
+                      <?php }
+                      endforeach; ?>
+                    </ul>
+                  </div>
+                    <a class="prev" id="carousel_prev" href="#"><span></span></a>
+                    <a class="next" id="carousel_next" href="#"><span></span></a>
+                </div>
+              </ul><!-- thumbnails -->
             </div>
           </div>
           <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" style ="<?php echo $apply_now == "" && $property_details == "" && $links == "" ? 'display:none;' : 'display:block;' ?> ">

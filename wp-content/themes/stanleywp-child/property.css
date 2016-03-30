@@ -1,3 +1,6 @@
+@import url('prettyphoto.css');
+
+
 /* SINGLE PROPERTY*/
 .single-property{
     margin-top:45px; 
@@ -161,6 +164,121 @@ a.more:hover{
     font-family: Radikal-Light;
     font-weight: normal;
     font-style: normal;
+}
+.about{
+    font-size: 18px;
+}
+.about a{
+    color:#171717 !important;
+}
+
+/* CAROUSEL */
+.carouf{
+    width:100%;
+    position: relative;
+}
+#intro {
+    width: 580px;
+    margin: 0 auto;
+}
+.wrapper {
+    background-color: white;
+    width: 480px;
+    margin: 40px auto;
+    padding: 50px;
+    box-shadow: 0 0 5px #999;
+}
+.list_carousel {
+    width: 100%;
+}
+.list_carousel ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: block;
+}
+.list_carousel li {
+    font-size: 40px;
+    color: #999;
+    text-align: center;
+    padding: 0;
+    margin: 6px;
+    display: block;
+    float: left;
+}
+.list_carousel.responsive {
+    width: auto;
+    margin-left: 0;
+}
+.clearfix {
+    float: none;
+    clear: both;
+}
+.carouf:hover .prev, .carouf:hover .next{
+    display: block !important;
+}
+.prev, .next{
+    display: none !important;
+    position: absolute;
+    top:35%;
+    width: 28px;
+    height: 28px;
+    background-color: rgba(0,0,0,0.5);
+}
+.prev {
+    left:10px;
+    float: left;
+    margin-left: 10px;
+}
+.next span{
+    margin:3px auto;
+    width:12px;
+    height: 22px;
+    background-image: url(images/gallery_arrows.png);
+    background-repeat: no-repeat;
+}
+.prev span{
+    margin:3px auto;
+    width:12px;
+    height: 22px;
+    background-image: url(images/gallery_arrows.png);
+    background-repeat: no-repeat;
+    background-position: 0px -22px;
+}
+.next {
+    right:10px;
+    float: right;
+    margin-right: 10px;
+}
+.pager {
+    float: left;
+    width: 300px;
+    text-align: center;
+}
+.pager a {
+    margin: 0 5px;
+    text-decoration: none;
+}
+.pager a.selected {
+    text-decoration: underline;
+}
+.timer {
+    background-color: #999;
+    height: 6px;
+    width: 0px;
+}
+.pp_nav{
+    float:right;
+    color:#fff !important;
+    font-weight: bold;
+    margin-right: 20px;
+}
+a.pp_next, a.pp_previous{
+     display: none; 
+}
+
+.pp_fade:hover a.pp_next, .pp_fade:hover a.pp_previous{
+      display: block; 
 }
 
 @media screen and (max-width: 767px) {
