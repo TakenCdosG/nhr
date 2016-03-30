@@ -81,7 +81,33 @@ nav, .navbar-inverse {
     padding: 3px 0;
     margin: 0;
 }
+.navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus{
+    color: #000000;
+}
+.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover, .navbar-inverse .navbar-nav>.open>a:focus{
+    background-color: transparent;
+    color: #000000;
+}
+.navbar-nav>li>.dropdown-menu{
+    background-color: #E37718;
 
+}
+.navbar-inverse .navbar-nav li ul li a{
+    color: #ffffff;
+}
+.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus{
+    background-color: transparent;
+}
+.navbar-inverse {
+    padding: 0;
+    margin: 0;
+}
+.navbar-inverse .navbar-nav>li:hover ul{
+    display: block;
+}
+.navbar-inverse .caret{
+    display: none;
+}
 /* FOOTER */
 
 #footer {
@@ -145,12 +171,59 @@ nav, .navbar-inverse {
     width: 100%;
 }
 
+/*Aparments Search */
+
+.apartments_search{
+    height: 60px;
+    border-bottom: 5px solid #D36F16;
+    background-color: #E37818;
+}
+
 /* font family */
 h2, h3{
     font-family: Radikal-Medium;
     font-weight: normal;
     font-style: normal;
     color:#272779;
+}
+
+.text_home{
+    padding-top: 62px;
+    padding-bottom: 10px;
+    font-size: 18px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.image_home{
+    padding: 90px 0 0 0;
+    text-align: center;
+}
+
+.property-item{
+    background-color: #DADADA;
+    border-right: 7px solid #FFFFFF;
+    height: 330px;
+    padding: 7px 0 0 0;
+}
+
+.property-item h3{
+    font-size: 26px;
+    text-transform: uppercase;
+    background-color: #F0F0F0;
+    margin: 0;
+    height: 95px;
+    padding-top: 23px;
+    text-align: center;
+}
+
+.gray_bar{
+    background-color: #DBDBDB;
+    height: 97px;
+    margin: 8px 0;
+}
+
+.property-item-3{
+    border-right: none;
 }
 
 /* Small devices (tablets, 768px and up) */
@@ -165,3 +238,34 @@ h2, h3{
 
 }
 
+/* FORM & PLACEHOLDER STYLES */
+.form-text{
+    color: #272779;
+}
+#wpcf7-f32-p33-o1 ::-webkit-input-placeholder {
+    font-size: 14px;
+    color: #333;
+}
+#wpcf7-f32-p33-o1 :-moz-placeholder { /* older Firefox*/
+    font-size:14px;
+    color: #333;
+}
+#wpcf7-f32-p33-o1 ::-moz-placeholder { /* Firefox 19+ */
+    font-size: 14px;
+    color: #333;
+}
+#wpcf7-f32-p33-o1 :-ms-input-placeholder {
+    font-size: 14px;
+    color: #333;
+}
+#wpcf7-f32-p33-o1 input[type=submit]{
+    background-color: #e47818;
+    border-color: #e47818;
+    color: #FFF;
+    border-radius: 0px;
+    border: none;
+    padding: 10px 20px;
+}
+#wpcf7-f32-p33-o1 textarea{
+    border-color: #DADADA;
+}
