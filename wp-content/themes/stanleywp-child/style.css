@@ -240,7 +240,7 @@ h2, h3{
 }
 
 .home .property-item-information, .home .property-item-background{
-   /* display: none; */
+    display: none;
     height: 228px;
     width: 100%;
     position: absolute;
