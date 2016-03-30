@@ -238,3 +238,34 @@ h2, h3{
 
 }
 
+/* FORM & PLACEHOLDER STYLES */
+.form-text{
+    color: #272779;
+}
+#wpcf7-f32-p33-o1 ::-webkit-input-placeholder {
+    font-size: 14px;
+    color: #333;
+}
+#wpcf7-f32-p33-o1 :-moz-placeholder { /* older Firefox*/
+    font-size:14px;
+    color: #333;
+}
+#wpcf7-f32-p33-o1 ::-moz-placeholder { /* Firefox 19+ */
+    font-size: 14px;
+    color: #333;
+}
+#wpcf7-f32-p33-o1 :-ms-input-placeholder {
+    font-size: 14px;
+    color: #333;
+}
+#wpcf7-f32-p33-o1 input[type=submit]{
+    background-color: #e47818;
+    border-color: #e47818;
+    color: #FFF;
+    border-radius: 0px;
+    border: none;
+    padding: 10px 20px;
+}
+#wpcf7-f32-p33-o1 textarea{
+    border-color: #DADADA;
+}
