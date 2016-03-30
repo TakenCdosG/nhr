@@ -3,29 +3,32 @@
 	
 $( window ).load( function() {
 	//Carousel
-	$('#carousel').carouFredSel({
-		responsive: true,
-		width: '100%',
-		scroll: 1,
-    	duration: 1800,
-		items: {
-			width: 800,
-			height: '50%',	//	optionally resize item-height
-			visible: {
-				min: 4,
-				max: 4
-			}
-		},
-		prev : { 
-	      button : "#carousel_prev",
-	      key : "left"
-	   },
+	if($('#carousel').length)
+	{
+		$('#carousel').carouFredSel({
+			responsive: true,
+			width: '100%',
+			scroll: 1,
+	    	duration: 1800,
+			items: {
+				width: 800,
+				height: '50%',	//	optionally resize item-height
+				visible: {
+					min: 4,
+					max: 4
+				}
+			},
+			prev : { 
+		      button : "#carousel_prev",
+		      key : "left"
+		   },
 
-	   next : { 
-	      button : "#carousel_next",
-	      key : "right"
-	   }
-	});
+		   next : { 
+		      button : "#carousel_next",
+		      key : "right"
+		   }
+		});
+	}else{}
 } ); // End on window load
 
 $( document ).ready( function() {
