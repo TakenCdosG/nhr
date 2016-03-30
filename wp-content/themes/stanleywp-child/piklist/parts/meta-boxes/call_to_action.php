@@ -3,7 +3,7 @@
 Title: Call to Action
 Post Type: page
 Order: 1
-Template: featured
+Show for Template: #, featured, all-properties
 */
 ?>
 
