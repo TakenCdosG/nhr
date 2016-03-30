@@ -116,6 +116,7 @@
          }
          ?>
  </div>
+        <div class="apartments_search"></div>
     </header><!-- end of header -->
     <?php gents_header_end(); // after header hook ?>
     
