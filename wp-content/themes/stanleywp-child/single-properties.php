@@ -78,21 +78,24 @@
                       foreach ( $attachments as $attachment ) :
                         $img_url  = wp_get_attachment_url( $attachment );
                         $img_alt  = get_post_meta( $attachment, '_wp_attachment_image_alt', true );
-                        $img_html = wp_get_attachment_image( $attachment, 'medium' ); ?>
+                        $img_html = wp_get_attachment_image( $attachment, 'medium' ); 
+                        if($img_url != ""){
+                        ?>
                         <li style="width:100px;">
                           <?php
                           // Display image with lightbox
-                          if (  'on' == 'on' ) : ?>
+                          if ( $img_url != "" ) : ?>
                             <a rel="prettyPhoto[Gallery]" href="<?php echo $img_url; ?>" title="<?php echo $img_alt; ?>" class="wpex-lightbox">
                               <?php echo $img_html; ?>
                             </a>
                           <?php
                           // Lightbox is disabled, only show image
                           else : ?>
-                            <?php echo $img_html; ?>
+                            <?php echo $img_html != "" ? $img_html : ""; ?>
                           <?php endif; ?>
                         </li>
-                      <?php endforeach; ?>
+                      <?php }
+                      endforeach; ?>
                     </ul>
                   </div>
                     <a class="prev" id="carousel_prev" href="#"><span></span></a>
