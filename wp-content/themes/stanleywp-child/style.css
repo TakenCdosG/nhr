@@ -200,14 +200,14 @@ h2, h3{
     text-align: center;
 }
 
-.property-item{
+.home .property-item{
     background-color: #DADADA;
     border-right: 7px solid #FFFFFF;
     height: 330px;
     padding: 7px 0 0 0;
 }
 
-.property-item h3{
+.home .property-item h3{
     font-size: 26px;
     text-transform: uppercase;
     background-color: #F0F0F0;
@@ -223,11 +223,11 @@ h2, h3{
     margin: 8px 0;
 }
 
-.property-item-3{
+.home .property-item-3{
     border-right: none;
 }
 
-.property-item:hover h3{
+.home .property-item:hover h3{
     color: #E37718;
     background-image: url("images/bg_featured_home_title.png");
     background-repeat: no-repeat;
@@ -235,11 +235,11 @@ h2, h3{
 
 }
 
-.property-item:hover .property-item-information, .property-item:hover .property-item-background{
+.home .property-item:hover .property-item-information, .home .property-item:hover .property-item-background{
     display: block;
 }
 
-.property-item-information, .property-item-background{
+.home .property-item-information, .home .property-item-background{
    /* display: none; */
     height: 228px;
     width: 100%;
@@ -248,19 +248,19 @@ h2, h3{
     left: 0;
     background-color: transparent;
 }
-.property-item-information{
+.home .property-item-information{
     color: #FFFFFF;
     padding: 50px 10% 30px 10%;
     font-size: 18px;
     font-family: Radikal-Medium;
 }
-.property-item-background{
+.home .property-item-background{
     background-color: #272779;
     opacity: 0.62;
     filter: alpha(opacity=62); /* For IE8 and earlier */
 }
 
-.property-item-information a.more {
+.home .property-item-information a.more {
     padding: 4px 14px;
     display: block;
     width: 106px;
@@ -268,7 +268,7 @@ h2, h3{
     bottom: 29px;
     font-family: Radikal-Bold;
 }
-.text-information{
+.home .text-information{
     overflow:hidden;
     height: 110px;
     line-height: 28px;
