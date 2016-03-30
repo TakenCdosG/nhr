@@ -90,7 +90,6 @@ nav, .navbar-inverse {
 }
 .navbar-nav>li>.dropdown-menu{
     background-color: #E37718;
-
 }
 .navbar-inverse .navbar-nav li ul li a{
     color: #ffffff;
@@ -166,7 +165,9 @@ nav, .navbar-inverse {
 }
 
 /* Header Slider */
-
+#footer .caret{
+    display: none;
+}
 #header_slider{
     width: 100%;
 }
@@ -224,6 +225,22 @@ h2, h3{
 
 .property-item-3{
     border-right: none;
+}
+
+.property-item:hover h3{
+    color: #E37718;
+}
+.property-item:hover .property-tiem-information{
+    display: block;
+}
+.property-tiem-information{
+    /*display: none; */
+}
+
+.property-tiem-information a.more {
+    padding: 4px 14px;
+    display: block;
+    width: 106px;
 }
 
 /* Small devices (tablets, 768px and up) */

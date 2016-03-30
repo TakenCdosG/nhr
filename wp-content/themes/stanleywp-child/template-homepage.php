@@ -46,6 +46,10 @@ get_header();
                 <div class="property-item col-lg-3 <?php echo "property-item-".$i; ?>">
                     <h3><?php the_title();?></h3>
                     <?php echo the_post_thumbnail('medium'); ?>
+                    <div class="property-tiem-information">
+                        TEXT TEXT TEXT TEXT
+                        <a class="more" href="<?php the_permalink(); ?>">Lear More</a>
+                    </div>
                 </div>
                 <?php $i++; ?>
             <?php endforeach; ?>
