@@ -71,6 +71,9 @@ body p{
 }
 
 /* ALL LISTINGS*/
+.all-properties .container, .all-properties.container{
+    max-width: 1058px !important;
+}
 .all-properties h2{
     margin:36px 0;
     text-transform: uppercase;
@@ -101,7 +104,7 @@ a.more:hover{
     text-decoration: none;
 }
 .excerpt div{
-    margin-top:22px;
+    margin-top:37px;
 }
 .callto{
     background-color:#616165;

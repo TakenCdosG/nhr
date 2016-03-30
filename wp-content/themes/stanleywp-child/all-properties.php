@@ -26,7 +26,7 @@ get_header();
             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
               <?php echo the_post_thumbnail('medium'); ?>
             </div>
-            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+            <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12">
               <h3><?php the_title();?></h3>
               <div class="excerpt" style="margin-bottom:15px;">
                 <?php echo wpautop(get_post_meta($post->ID, 'excerpt', true)); ?>
@@ -41,16 +41,16 @@ get_header();
     <?php endforeach; ?>
 </div><!-- end of #content -->
 <?php if(have_posts()) : while(have_posts()) : the_post();?>
-<div class="container">
+<div class="all-properties container">
   <?php 
 
   if(get_post_meta($post->ID, 'callto_title', true) == "" && get_post_meta($post->ID, 'callto_subtitle', true) == "" && get_post_meta($post->ID, 'callto_button', true) == "" ){}else{ ?>
   <div class="row callto">
-    <div class="col-lg-7 col-md-7">
+    <div class="col-lg-6 col-md-6">
       <h3><?php echo (get_post_meta($post->ID, 'callto_title', true)); ?></h3>
       <p><?php echo get_post_meta($post->ID, 'callto_subtitle', true); ?></p>
     </div>
-    <div class="col-lg-5 col-md-5">
+    <div class="col-lg-6 col-md-6">
       <?PHP if(get_post_meta($post->ID, 'callto_link', true)!= ""){ ?>
       <div class="button">
         <a href="<?php echo get_post_meta($post->ID, 'callto_link', true);?>"><?php echo get_post_meta($post->ID, 'callto_button', true) != "" ? get_post_meta($post->ID, 'callto_button', true) : 'VIEW ALL AVAILABLE APARTAMENTS'; ?></a>
