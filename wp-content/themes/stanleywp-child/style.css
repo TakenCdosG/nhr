@@ -240,7 +240,7 @@ h2, h3{
 }
 
 .property-item-information, .property-item-background{
-    display: none; 
+   /* display: none; */
     height: 228px;
     width: 100%;
     position: absolute;
@@ -269,8 +269,10 @@ h2, h3{
     font-family: Radikal-Bold;
 }
 .text-information{
-    overflow: hidden;
+    overflow:hidden;
     height: 110px;
+    line-height: 28px;
+
 }
 /* Small devices (tablets, 768px and up) */
 @media (min-width:768px) {
