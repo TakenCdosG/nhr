@@ -264,14 +264,16 @@ h2, h3{
 .home .property-item-information a.more {
     padding: 4px 14px;
     display: block;
-    width: 106px;
+    width: 118px;
     position: absolute;
     bottom: 29px;
-    font-family: Radikal-Bold;
+    font-family: Radikal-Medium;
+    text-transform: uppercase;
+    font-size: 14px;
 }
 .home .text-information{
     overflow:hidden;
-    height: 100px;
+    height: 112px;
     line-height: 20px;
 
 }
