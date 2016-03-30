@@ -177,6 +177,9 @@ a.more:hover{
     width:100%;
     position: relative;
 }
+ul.single_thumbnails{
+    padding: 0 !important;
+}
 #intro {
     width: 580px;
     margin: 0 auto;
