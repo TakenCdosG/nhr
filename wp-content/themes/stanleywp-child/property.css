@@ -79,7 +79,10 @@ body p{
     display: block;
     clear: both;
 }
-
+.home-featured h2{
+    margin:36px 0;
+    text-transform: uppercase;
+}
 /* ALL LISTINGS*/
 .all-properties .container, .all-properties.container{
     max-width: 1058px !important;
@@ -286,11 +289,15 @@ ul.single_thumbnails{
     height: 6px;
     width: 0px;
 }
+/*PRETTY PHOTO*/
 .pp_nav{
     float:right;
     color:#fff !important;
     font-weight: bold;
     margin-right: 20px;
+}
+a.pp_close{
+    z-index: 1000;
 }
 a.pp_next, a.pp_previous{
      display: none; 

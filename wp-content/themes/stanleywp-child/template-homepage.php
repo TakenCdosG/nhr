@@ -22,7 +22,7 @@ get_header();
 <?php endif; ?>
 
 
-    <div class="all-properties">
+    <div class="home-featured">
         <?php
         $args = array(
             'numberposts'=> 4,
