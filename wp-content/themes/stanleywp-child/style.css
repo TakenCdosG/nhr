@@ -105,7 +105,7 @@ nav, .navbar {
     padding: 0;
     margin: 0;
 }
-.dropdown:hover .dropdown-menu {
+.navbar .dropdown:hover .dropdown-menu {
     display: block;
 }
 .navbar .caret{
@@ -190,8 +190,18 @@ nav, .navbar {
     height: 60px;
     border-bottom: 5px solid #D36F16;
     background-color: #E37818;
+    text-align: center;
+    padding-top: 8px;
+}
+.apartments_search a{
+    font-size: 28px;
+    font-family: Radikal-Light;
+    color: #FFFFFF;
 }
 
+.apartments_search a:hover{
+    text-decoration: none;
+}
 /* font family */
 h2, h3{
     font-family: Radikal-Medium;

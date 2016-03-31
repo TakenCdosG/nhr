@@ -116,7 +116,7 @@
          }
          ?>
  </div>
-        <div class="apartments_search"></div>
+        <div class="apartments_search"><a href="/all-properties">Find an Apartment &#10095;</a> </div>
     </header><!-- end of header -->
     <?php gents_header_end(); // after header hook ?>
     
