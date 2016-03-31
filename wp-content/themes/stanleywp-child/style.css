@@ -366,7 +366,11 @@ input[type=text], input[type=email]{
     margin: 0 auto;
     width: 100%;
 }
+/* GOOGLE MAPS STYLES */
 .mapp-layout{
     border:none;
     margin: 0px;
+}
+.block_three{
+    margin-top: 25px;
 }
