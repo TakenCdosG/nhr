@@ -37,17 +37,18 @@ get_header();
             )
         );
                     $myposts = get_posts( $args );?>
-        <div class="container">
+        <div class="container container-full">
             <div class="row">
             <h2 class="center">Featured Properties</h2>
                 <?php $i = 0; ?>
             <?php foreach( $myposts as $post) : setup_postdata( $post ) ?>
 
-                <div class="property-item col-lg-3 <?php echo "property-item-".$i; ?>">
+                <div class="property-item col-lg-3 col-sm-3 col-xs-12 <?php echo "property-item-".$i; ?>">
                     <h3><?php the_title();?></h3>
-                    <?php echo the_post_thumbnail('medium'); ?>
-                    <div class="property-item-background">
-                        </div>
+                    <div class="home-thumb" style="background-image: url(<?php echo the_post_thumbnail_url('medium'); ?>)">
+                        
+                    </div>
+                    <div class="property-item-background"></div>
                     <div class="property-item-information">
                        <div class="text-information"><?php echo wpautop(get_post_meta($post->ID, 'excerpt', true)); ?></div>
                         <a class="more" href="<?php the_permalink(); ?>">Learn More</a>
