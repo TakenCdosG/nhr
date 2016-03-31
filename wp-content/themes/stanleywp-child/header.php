@@ -53,22 +53,32 @@
     <?php gents_in_header(); // header hook ?>
 <div id="top-header">
     <div class="container">
-        <?php
-        $args = array(
-            'theme_location' => 'secondary-menu',
-            'depth'      => 2,
-            'container'  => false,
-            'menu_class'     => 'widget-wrapper widget_nav_menu',
-            'walker'     => new Bootstrap_Walker_Nav_Menu()
-        );
+            <?php if ( get_theme_mod( 'themeslug_logo' ) ) : ?>
+                <div class='site-logo'>
+                    <a href='<?php echo esc_url( home_url( '/' ) ); ?>' title='<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>' rel='home'><img src='<?php echo esc_url( get_theme_mod( 'themeslug_logo' ) ); ?>' alt='<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>'></a>
+                </div>
+            <?php else : ?>
+                <hgroup>
+                    <h1 class='site-title'><a href='<?php echo esc_url( home_url( '/' ) ); ?>' title='<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>' rel='home'><?php bloginfo( 'name' ); ?></a></h1>
+                    <h2 class='site-description'><?php bloginfo( 'description' ); ?></h2>
+                </hgroup>
+            <?php endif; ?>
+            <?php
+            $args = array(
+                'theme_location' => 'secondary-menu',
+                'depth'      => 2,
+                'container'  => false,
+                'menu_class'     => 'widget-wrapper widget_nav_menu',
+                'walker'     => new Bootstrap_Walker_Nav_Menu()
+            );
 
-        wp_nav_menu($args);
-        ?>
-        <?php dynamic_sidebar('header-bar'); ?>
-        <div class="social_icons widget-wrapper">
-            <a href="http://facebook.com" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/facebook.png" alt="NHR properties Facebook"></a>
-            <a href="http://twitter.com" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/twitter.png" alt="NHR properties twitter"></a>
-        </div>
+            wp_nav_menu($args);
+            ?>
+            <?php dynamic_sidebar('header-bar'); ?>
+            <div class="social_icons widget-wrapper">
+                <a href="http://facebook.com" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/facebook.png" alt="NHR properties Facebook"></a>
+                <a href="http://twitter.com" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/twitter.png" alt="NHR properties twitter"></a>
+            </div>
     </div>
 </div>
 <nav role="navigation">
