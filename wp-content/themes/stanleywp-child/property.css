@@ -289,11 +289,15 @@ ul.single_thumbnails{
     height: 6px;
     width: 0px;
 }
+/*PRETTY PHOTO*/
 .pp_nav{
     float:right;
     color:#fff !important;
     font-weight: bold;
     margin-right: 20px;
+}
+a.pp_close{
+    z-index: 1000;
 }
 a.pp_next, a.pp_previous{
      display: none; 

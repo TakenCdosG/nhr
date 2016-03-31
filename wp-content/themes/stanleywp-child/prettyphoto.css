@@ -169,7 +169,7 @@ a.pp_next { margin-right:10px; background: url(images/prettyPhoto/right.png) 100
 a.pp_previous { background: url(images/prettyPhoto/left.png) 0% 50% no-repeat; display: block; float: left; height: 100%; text-indent: -10000px; width: 30%; }
 a.pp_expand,
 a.pp_contract { cursor: pointer; display: none; height: 20px; position: absolute; right: 30px; text-indent: -10000px; top: 10px; width: 20px; z-index: 20000; }
-a.pp_close { display: block; line-height: 22px; position: absolute; right: 0; text-indent: -10000px; top: 0; }
+a.pp_close { border-radius:50%; line-height: 22px; position: absolute; right: 0px; text-indent: -10000px; top: -22px; width:40px; height:40px; background: url(images/prettyPhoto/close.png) rgba(0,0,0,0.5);}
 .pp_loaderIcon { display: block; height: 24px; left: 50%; margin: -12px 0 0 -12px; position: absolute; top: 50%; width: 24px; }
 #pp_full_res { line-height: 0!important }
 #pp_full_res .pp_inline { text-align: left }

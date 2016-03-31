@@ -43,7 +43,7 @@ $( document ).ready( function() {
 				counter_separator_label: ' of ',
 				show_title         : false,
 				social_tools       : false,
-				wmode              : 'opaque'
+				wmode              : 'opaque',
 			} );
 		
 			//PrettyPhoto With Gallery
