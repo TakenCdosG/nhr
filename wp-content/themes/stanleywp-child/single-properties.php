@@ -27,7 +27,7 @@
               <?php if(get_post_meta($post->ID, 'features', true) != ""){?>
               <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                 <span><strong>Features</strong></span>
-                <ul style="list-style-type: disc; padding:0 15px;">
+                <ul>
                   <?php $feature = get_post_meta($post->ID, 'features'); 
                     $valor = "";
                     foreach ($feature as $valor) {

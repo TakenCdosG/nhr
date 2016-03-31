@@ -213,6 +213,13 @@ h2, h3{
     border-right: 7px solid #FFFFFF;
     height: 330px;
     padding: 7px 0 0 0;
+    overflow: hidden;
+}
+
+.home .home-thumb{
+    height:229px;
+    background-position: center;
+    background-size: cover;
 }
 
 .home .property-item h3{
@@ -258,7 +265,7 @@ h2, h3{
 }
 .home .property-item-information{
     color: #FFFFFF;
-    padding: 50px 10% 30px 10%;
+    padding: 45px 10% 30px 10%;
     font-size: 18px;
     font-family: Radikal-Medium;
 }
