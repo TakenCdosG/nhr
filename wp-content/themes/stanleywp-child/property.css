@@ -1,5 +1,8 @@
 @import url('prettyphoto.css');
 
+body{
+    font-size: 16px;
+}
 body p{
     line-height: 24px;    
 }
