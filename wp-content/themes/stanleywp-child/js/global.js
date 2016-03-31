@@ -6,19 +6,32 @@ $( window ).load( function() {
 	if($('#carousel').length)
 	{
 		$('#carousel').carouFredSel({
-			responsive: true,
-			width: '100%',
-			scroll: 1,
-	    	duration: 1800,
-			items: {
-				width: 800,
-				height: '50%',	//	optionally resize item-height
-				visible: {
-					min: 4,
-					max: 4
-				}
-			},
-			prev : { 
+			responsive : true,
+        items:
+        {
+            width: 200,
+            height: '50%',	//	optionally resize item-height
+            visible:
+                {
+                    min: 2,
+                    max: 4
+                }
+        },
+        scroll : {
+            items:
+            {
+                width: 780,
+                height: '50%',	//	optionally resize item-height
+                visible:
+                    {
+                        min: 2,
+                        max: 4
+                    }
+            },
+            easing          : "quadratic",
+            duration        : 700
+        },
+        prev : { 
 		      button : "#carousel_prev",
 		      key : "left"
 		   },
