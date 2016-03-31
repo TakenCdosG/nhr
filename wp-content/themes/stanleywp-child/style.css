@@ -107,6 +107,13 @@ nav, .navbar-inverse {
 .navbar-inverse .caret{
     display: none;
 }
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:focus{
+    background-color: transparent;
+    color: #e47818 !important;
+}
+.dropdown-menu>.active>a, .dropdown-menu>.active>a:hover, .dropdown-menu>.active>a:focus {
+    background-color: transparent;
+}
 /* FOOTER */
 
 #footer {

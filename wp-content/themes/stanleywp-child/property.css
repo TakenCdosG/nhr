@@ -9,7 +9,10 @@ body p{
     margin-top:45px; 
     margin-bottom:45px;
 }
-.single-property p{
+.single-property .features{
+    font-size:16px;
+}
+.single-paragraph p{
     margin-bottom: 35px;
 }
 .single-property span{
@@ -18,7 +21,7 @@ body p{
 }
 .single-property ul{
     list-style-type: disc; 
-    padding:0 15px;
+    /*padding:0 15px;*/
 }
 .single-property .button{
     width:100%;
@@ -36,7 +39,7 @@ body p{
 .single-property .block_one{
     word-wrap: break-word;
     background-color:#dbdbdb;
-    padding: 20px;
+    padding: 20px 35px;
     font-family: Radikal-Medium;
     font-weight: normal;
     font-style: normal;

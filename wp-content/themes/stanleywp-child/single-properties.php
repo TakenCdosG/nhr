@@ -18,12 +18,12 @@
                 $property_details = get_post_meta($post->ID, 'property_details', true); 
                 $links = get_post_meta($post->ID, 'links', true); 
           ?>
-          <div class="<?php echo $apply_now == "" && $property_details == "" && $links == "" ? 'col-lg-12' : 'col-lg-8 col-md-8 col-sm-8 col-xs-12' ?> ">
+          <div class="single-paragraph <?php echo $apply_now == "" && $property_details == "" && $links == "" ? 'col-lg-12' : 'col-lg-8 col-md-8 col-sm-8 col-xs-12' ?> ">
             <h2><?php the_title(); ?></h2>
             <br/>
             <?php the_content(); ?>
             <br/>
-            <div class="row">
+            <div class="row features">
               <?php if(get_post_meta($post->ID, 'features', true) != ""){?>
               <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                 <span><strong>Features</strong></span>
