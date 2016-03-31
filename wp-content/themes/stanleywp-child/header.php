@@ -72,7 +72,7 @@
     </div>
 </div>
 <nav role="navigation">
-    <div class="navbar navbar-inverse navbar-static-top">
+    <div class="navbar">
         <div class="container">
            <!-- .navbar-toggle is used as the toggle for collapsed navbar content -->
             <div class="navbar-header">
@@ -82,7 +82,7 @@
               <span class="icon-bar"></span>
             </button>
         </div>
-          <div class="navbar-collapse collapse navbar-responsive-collapse">
+          <div class="collapse navbar-collapse navbar-1-collapse">
 			   <?php
                 $args = array(
                     'theme_location' => 'top-bar',
