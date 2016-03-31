@@ -79,7 +79,10 @@ body p{
     display: block;
     clear: both;
 }
-
+.home-featured h2{
+    margin:36px 0;
+    text-transform: uppercase;
+}
 /* ALL LISTINGS*/
 .all-properties .container, .all-properties.container{
     max-width: 1058px !important;
