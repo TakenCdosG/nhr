@@ -131,6 +131,13 @@
             </div>
             <?php
               }
+                if (get_post_meta($post->ID, 'gmaps_sc', true) != ""){
+                    ?>
+                    <div class="block_three">
+                        <?php echo do_shortcode(get_post_meta($post->ID, 'gmaps_sc', true)); ?>
+                    </div>
+                <?php
+                }
             ?>
           </div>
         </div>
