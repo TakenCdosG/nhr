@@ -301,7 +301,10 @@ h2, h3{
 }
 
 /* FORM & PLACEHOLDER STYLES */
-.form-text{
+.contact-us-page{
+    padding-left: 0px;
+}
+.form-text p{
     color: #272779;
 }
 #wpcf7-f32-p33-o1 ::-webkit-input-placeholder {
@@ -330,4 +333,15 @@ h2, h3{
 }
 #wpcf7-f32-p33-o1 textarea{
     border-color: #DADADA;
+    height: 374px;
+}
+.contact-us-page .map-row{
+    margin-top: -68px;
+}
+input[type=text], input[type=email]{
+    width: 100%;
+}
+.container-full {
+    margin: 0 auto;
+    width: 100%;
 }
