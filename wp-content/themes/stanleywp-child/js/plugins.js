@@ -4233,7 +4233,7 @@
 			{
 				m = ['carouFredSel'+s+':', m];
 			}
-			window.console.log(m);
+			
 		}
 		return false;
 	}

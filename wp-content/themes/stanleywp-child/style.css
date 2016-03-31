@@ -45,6 +45,10 @@
     padding-right: 20px;
 }
 
+#top-header #polylang-3 select{
+    width: auto;
+}
+
 #top-header .container div, #top-header .container a {
     display: inline-block;
 }
@@ -107,6 +111,13 @@ nav, .navbar {
 .navbar .caret{
     display: none;
 }
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:focus{
+    background-color: transparent;
+    color: #e47818 !important;
+}
+.dropdown-menu>.active>a, .dropdown-menu>.active>a:hover, .dropdown-menu>.active>a:focus {
+    background-color: transparent;
+}
 /* FOOTER */
 
 #footer {
@@ -125,6 +136,7 @@ nav, .navbar {
 #footer .widget_text{
     text-align: right;
     font-size: 16px;
+    line-height: 2;
 }
 
 #footer input[type=text]{
@@ -149,7 +161,7 @@ nav, .navbar {
     padding: 5px;
     color: #FFFFFF;
     margin-left: -4px;
-    margin-top: -3px;
+    margin-top: -4px;
 }
 #footer .widget-wrapper.signup-form{
     padding-left: 0px;
@@ -205,6 +217,13 @@ h2, h3{
     border-right: 7px solid #FFFFFF;
     height: 330px;
     padding: 7px 0 0 0;
+    overflow: hidden;
+}
+
+.home .home-thumb{
+    height:229px;
+    background-position: center;
+    background-size: cover;
 }
 
 .home .property-item h3{
@@ -250,7 +269,7 @@ h2, h3{
 }
 .home .property-item-information{
     color: #FFFFFF;
-    padding: 50px 10% 30px 10%;
+    padding: 45px 10% 30px 10%;
     font-size: 18px;
     font-family: Radikal-Medium;
 }
@@ -293,7 +312,10 @@ h2, h3{
 }
 
 /* FORM & PLACEHOLDER STYLES */
-.form-text{
+.contact-us-page{
+    padding-left: 0px;
+}
+.form-text p{
     color: #272779;
 }
 #wpcf7-f32-p33-o1 ::-webkit-input-placeholder {
@@ -322,4 +344,15 @@ h2, h3{
 }
 #wpcf7-f32-p33-o1 textarea{
     border-color: #DADADA;
+    height: 374px;
+}
+.contact-us-page .map-row{
+    margin-top: -68px;
+}
+input[type=text], input[type=email]{
+    width: 100%;
+}
+.container-full {
+    margin: 0 auto;
+    width: 100%;
 }
