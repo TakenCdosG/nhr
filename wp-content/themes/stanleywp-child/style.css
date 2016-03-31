@@ -111,7 +111,7 @@ nav, .navbar {
 .navbar .caret{
     display: none;
 }
-.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:focus{
+.navbar .navbar-nav>.active>a, .navbar .navbar-nav>.active>a:hover, .navbar .navbar-nav>.active>a:focus{
     background-color: transparent;
     color: #e47818 !important;
 }
