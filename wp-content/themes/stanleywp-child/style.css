@@ -175,13 +175,25 @@ nav, .navbar {
 #footer .widget-wrapper.widget_text{
     padding-top: 25px;
 }
-
-/* Header Slider */
 #footer .caret{
     display: none;
 }
+
+/* Header Slider */
+
 #header_slider{
     width: 100%;
+    position: relative;
+}
+
+#dark_overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background-color: #000000;
+    opacity: 0.36;
+    filter: alpha(opacity=36); /* For IE8 and earlier */
 }
 
 /*Aparments Search */

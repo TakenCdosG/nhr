@@ -98,24 +98,28 @@
         </div>
      </div>           
 </nav>
-           
- <div id="header_slider" class="fotorama" data-maxheight="500" data-width="100%" data-fit="cover" data-nav="false">
-         <?php
-         $my_id = $wpdb->get_var("SELECT ID FROM $wpdb->posts WHERE post_name = 'home'");
-         $image_ids = get_post_meta($post->ID, 'upload_media',true);
-         if ($image_ids == "") {
-             $image_ids = get_post_meta($my_id, 'upload_media');
-         }else {
-             $image_ids = get_post_meta($post->ID, 'upload_media');
-         }
-         foreach ($image_ids as $image)
-         {
-             $myupload = get_post($image);
-            $alt_text = get_post_meta($image, '_wp_attachment_image_alt', true);
-             echo '<img  src="' . wp_get_attachment_url($image) . '" alt="'.$alt_text.'" />';
-         }
-         ?>
- </div>
+     <div id="header_slider">
+         <div class="fotorama" data-maxheight="500" data-width="100%" data-fit="cover" data-nav="false">
+                 <?php
+                 $my_id = $wpdb->get_var("SELECT ID FROM $wpdb->posts WHERE post_name = 'home'");
+                 $image_ids = get_post_meta($post->ID, 'upload_media',true);
+                 if ($image_ids == "") {
+                     $image_ids = get_post_meta($my_id, 'upload_media');
+                 }else {
+                     $image_ids = get_post_meta($post->ID, 'upload_media');
+                 }
+                 foreach ($image_ids as $image)
+                 {
+                    $myupload = get_post($image);
+                    $alt_text = get_post_meta($image, '_wp_attachment_image_alt', true);
+                     echo '<img  src="' . wp_get_attachment_url($image) . '" alt="'.$alt_text.'" />';
+                 }
+                 ?>
+         </div>
+        <!-- <?php /*if(is_front_page()){*/?>
+         <div id="dark_overlay">JODER</div>
+         --><?php /*} */?>
+     </div>
         <div class="apartments_search"><a href="/all-properties">Find an Apartment &#10095;</a> </div>
     </header><!-- end of header -->
     <?php gents_header_end(); // after header hook ?>
