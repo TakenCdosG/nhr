@@ -7,6 +7,7 @@ $( window ).load( function() {
 	{
 		$('#carousel').carouFredSel({
 			responsive : true,
+            auto: false,
         items:
         {
             width: 200,
