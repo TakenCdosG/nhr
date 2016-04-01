@@ -450,6 +450,11 @@ input[type=text], input[type=email]{
         margin: 0;
     }
 }
+@media screen and (max-width: 350px) {
+    #top-header .container a {
+        font-size: 13px;
+    }
+}
 /* GOOGLE MAPS STYLES */
 .mapp-layout{
     border:none;
