@@ -10,6 +10,21 @@ update_option( 'medium_size_w', 800 );
 update_option( 'medium_size_h', 511 );
 update_option( 'medium_crop', 1 );
 
+function custom_image_sizes() {
+  add_theme_support('post-thumbnails');
+  add_image_size('medium_custom', 300, 198, true);
+  add_image_size('medium_custom', 300, 198, true);
+}
+add_action('after_setup_theme', 'custom_image_sizes');
+function add_custom_sizes( $imageSizes ) {
+  $my_sizes = array(
+    'medium_custom' => 'Medium-small'
+  );
+  return array_merge( $imageSizes, $my_sizes );
+}
+add_filter( 'image_size_names_choose', 'add_custom_sizes' );
+
+
 
 //Properties Custom Post Type
 

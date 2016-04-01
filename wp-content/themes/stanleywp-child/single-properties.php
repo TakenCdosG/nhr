@@ -78,7 +78,7 @@
                       foreach ( $attachments as $attachment ) :
                         $img_url  = wp_get_attachment_url( $attachment );
                         $img_alt  = get_post_meta( $attachment, '_wp_attachment_image_alt', true );
-                        $img_html = wp_get_attachment_image( $attachment, 'medium' ); 
+                        $img_html = wp_get_attachment_image( $attachment, 'medium_custom' ); 
                         if($img_url != ""){
                         ?>
                         <li style="width:100px;">
