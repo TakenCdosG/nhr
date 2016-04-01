@@ -132,7 +132,7 @@
          <div id="dark_overlay">JODER</div>
          --><?php /*} */?>
      </div>
-        <div class="apartments_search"><a href="/all-properties">Find an Apartment &#10095;</a> </div>
+        <div class="apartments_search"><a href="/all-properties"> <?php if(pll_current_language() == 'es'){echo "Encontrar un Apartmento &#10095;"; }else{echo "Find an Apartment &#10095;";}  ?></a> </div>
     </header><!-- end of header -->
     <?php gents_header_end(); // after header hook ?>
     
