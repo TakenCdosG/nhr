@@ -47,8 +47,8 @@
             ?>
             <div class="col-lg-4 signup-form widget-wrapper">
                 <form>
-                    <input type="text" placeholder="Email signup">
-                    <input type="submit" value="Submit">
+                    <input type="text" placeholder="<?php if(pll_current_language() == 'es'){echo "Inscribir Email"; }else{echo "Email signup";}  ?>">
+                    <input type="submit" value="<?php if(pll_current_language() == 'es'){echo "Enviar"; }else{echo "Submit";}  ?>">
                 </form>
             </div>
 

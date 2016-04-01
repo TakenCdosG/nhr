@@ -53,18 +53,11 @@
     <?php gents_in_header(); // header hook ?>
 <div id="top-header">
     <div class="container">
-            <?php if ( get_theme_mod( 'themeslug_logo' ) ) : ?>
                 <div class='site-logo'>
                     <a href="<?php echo home_url(); ?>/" title="<?php bloginfo( 'name' ); ?>" rel="home">
                         <img src="<?php echo bi_get_data('custom_logo'); ?>" alt="<?php bloginfo( 'name' ) ?>" />
                     </a>
                 </div>
-            <?php else : ?>
-                <hgroup>
-                    <h1 class='site-title'><a href='<?php echo esc_url( home_url( '/' ) ); ?>' title='<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>' rel='home'><?php bloginfo( 'name' ); ?></a></h1>
-                    <h2 class='site-description'><?php bloginfo( 'description' ); ?></h2>
-                </hgroup>
-            <?php endif; ?>
             <?php
             $args = array(
                 'theme_location' => 'secondary-menu',
