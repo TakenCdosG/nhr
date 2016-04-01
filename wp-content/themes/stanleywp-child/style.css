@@ -410,6 +410,9 @@ input[type=text], input[type=email]{
         display: block !important;
         padding-bottom: 20px;
     }
+    .image_home img{
+        max-width: 60% !important;
+    }
 }
 /* GOOGLE MAPS STYLES */
 .mapp-layout{
