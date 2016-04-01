@@ -39,7 +39,12 @@ get_header();
                     $myposts = get_posts( $args );?>
         <div class="container container-full">
             <div class="row">
-            <h2 class="center">Featured Properties</h2>
+                <?php 
+                $my_id = $wpdb->get_var("SELECT ID FROM $wpdb->posts WHERE post_name = 'featured-properties'");
+                $post_ids = pll_get_post($my_id);
+
+                ?>
+            <h2 class="center"><?php echo get_the_title($post_ids); ?></h2>
                 <?php $i = 0; ?>
             <?php foreach( $myposts as $post) : setup_postdata( $post ) ?>
 
