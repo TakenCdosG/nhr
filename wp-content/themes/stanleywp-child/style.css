@@ -402,15 +402,15 @@ input[type=text], input[type=email]{
     }
 }
 @media screen and (max-width: 727px) {
-    .site-logo{
+    .site-logo {
         clear: both;
         width: 180px;
         float: none;
         margin: 0 auto;
         display: block !important;
-        padding-bottom:20px; 
+        padding-bottom: 20px;
     }
-
+}
 /* GOOGLE MAPS STYLES */
 .mapp-layout{
     border:none;
