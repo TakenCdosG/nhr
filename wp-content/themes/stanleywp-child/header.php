@@ -55,7 +55,9 @@
     <div class="container">
             <?php if ( get_theme_mod( 'themeslug_logo' ) ) : ?>
                 <div class='site-logo'>
-                    <a href='<?php echo esc_url( home_url( '/' ) ); ?>' title='<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>' rel='home'><img src='<?php echo get_theme_mod( 'themeslug_logo' ); ?>' alt='<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>'></a>
+                    <a href="<?php echo home_url(); ?>/" title="<?php bloginfo( 'name' ); ?>" rel="home">
+                        <img src="<?php echo bi_get_data('custom_logo'); ?>" alt="<?php bloginfo( 'name' ) ?>" />
+                    </a>
                 </div>
             <?php else : ?>
                 <hgroup>
