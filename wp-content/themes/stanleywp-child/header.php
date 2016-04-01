@@ -69,6 +69,7 @@
 
             wp_nav_menu($args);
             ?>
+            <div class="break"></div>
             <?php dynamic_sidebar('header-bar'); ?>
             <div class="social_icons widget-wrapper">
                 <a href="http://facebook.com" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/facebook.png" alt="NHR properties Facebook"></a>

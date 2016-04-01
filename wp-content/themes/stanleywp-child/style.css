@@ -432,10 +432,22 @@ input[type=text], input[type=email]{
         float: none;
         margin: 0 auto;
         display: block !important;
-        padding-bottom: 20px;
+        padding-bottom: 25px;
     }
     .image_home img{
         max-width: 60% !important;
+    }
+    #top-header .container{
+        text-align: center;
+    }
+    #top-header .container .break{
+        height:1px;
+        width: 100%;
+        display: block;
+    }
+    #top-header .widget-wrapper {
+        padding: 0 0 15px 0;
+        margin: 0;
     }
 }
 /* GOOGLE MAPS STYLES */
