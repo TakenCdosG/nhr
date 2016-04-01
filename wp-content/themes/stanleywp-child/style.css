@@ -126,7 +126,25 @@ nav, .navbar {
     left: 0;
     top:8px;
 }
-
+.navbar-collapse{
+    margin-bottom: 25px;
+}
+.navbar-collapse ul.dropdown-menu{
+    width:100%;
+    border:none;
+    box-shadow: none;
+    position: relative;
+    margin-bottom: 5px;
+    padding-left:15px;
+    border-radius: none;
+    background-color: transparent;
+}
+.navbar-collapse ul.dropdown-menu li a{
+    color: #000 !important;
+}
+:focus{
+    outline: 0px !important;
+}
 
 /* FOOTER */
 

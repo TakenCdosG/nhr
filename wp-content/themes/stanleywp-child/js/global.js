@@ -46,6 +46,10 @@ $( window ).load( function() {
 } ); // End on window load
 
 $( document ).ready( function() {
+	
+	$('.navbar-toggle').click(function(){
+		$('.navbar-collapse').toggle();
+	});
 
 // Prettyphoto => for desktops only
 		if ( $( window ).width() > 767 ) {
