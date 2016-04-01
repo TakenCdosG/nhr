@@ -11,7 +11,7 @@ $( window ).load( function() {
         items:
         {
             width: 200,
-            height: '50%',	//	optionally resize item-height
+            height: '70%',	//	optionally resize item-height
             visible:
                 {
                     min: 2,
