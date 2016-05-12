@@ -28,7 +28,7 @@ body p{
 }
 .single-property ul{
     list-style-type: disc; 
-    /*padding:0 15px;*/
+    padding:0 15px;
 }
 .single-property .button{
     width:100%;
