@@ -73,7 +73,7 @@
             <?php dynamic_sidebar('header-bar'); ?>
             <div class="social_icons widget-wrapper">
                 <a href="http://facebook.com" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/facebook.png" alt="NHR properties Facebook"></a>
-                <a href="http://twitter.com" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/twitter.png" alt="NHR properties twitter"></a>
+                <a href="https://twitter.com/nhr_properties" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/twitter.png" alt="NHR properties twitter"></a>
             </div>
     </div>
 </div>
