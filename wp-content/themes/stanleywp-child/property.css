@@ -27,8 +27,11 @@ body p{
     margin-bottom: 12px;
 }
 .single-property ul{
-    list-style-type: disc; 
-    padding:0 15px;
+    list-style-type: disc;
+    padding-left: 15px;
+}
+.single-property ul li{
+    margin-left: 1.5em !important;
 }
 .single-property .button{
     width:100%;
@@ -305,6 +308,10 @@ a.pp_next, a.pp_previous{
 
 .pp_fade:hover a.pp_next, .pp_fade:hover a.pp_previous{
       display: block; 
+}
+
+.block_one.basic a{
+    color: #ffffff;
 }
 
 @media screen and (max-width: 767px) {
