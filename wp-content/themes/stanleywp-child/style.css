@@ -175,6 +175,7 @@ nav, .navbar {
 #footer .widget-wrapper.signup-form{
     padding-left: 0px;
     padding-right: 0px;
+    display: none;
 }
 
 #footer .widget-wrapper{
