@@ -26,7 +26,7 @@
               if (get_post_meta($post->ID, 'visit_link', true) != ""){
             ?>
             <div class="basic button">
-              <a href="<?php echo get_post_meta($post->ID, 'visit_link', true); ?>"> <?php echo get_post_meta($post->ID, 'visit_button', true); ?> </a>
+              <a href="<?php echo get_post_meta($post->ID, 'visit_link', true); ?>" target="_blank"> <?php echo get_post_meta($post->ID, 'visit_button', true); ?> </a>
             </div>
             <?php } ?>
             </div>
@@ -49,7 +49,7 @@
               if (get_post_meta($post->ID, 'basic_image_img', true) != ""){
             ?>
             <div class="basic_image">
-              <?php echo wp_get_attachment_image(get_post_meta($post->ID, 'basic_image_img', true), 'full' ); ?>
+              <a href="<?php echo get_post_meta($post->ID, 'visit_link', true); ?>" target="_blank">  <?php echo wp_get_attachment_image(get_post_meta($post->ID, 'basic_image_img', true), 'full' ); ?></a>
             </div>
             <?php
               }
