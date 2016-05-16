@@ -65,6 +65,21 @@ get_header();
         </div>
     </div><!-- end of #content -->
 
-<div class="gray_bar"></div>
+<div class="gray_bar">
+
+    <div class="col-lg-3 col-sm-3 col-xs-12">
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/home_logos/the_heights_on_the_river.jpg"/>
+    </div>
+    <div class="col-lg-3 col-sm-3 col-xs-12">
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/home_logos/new_haven_village_suites.png"/>
+    </div>
+    <div class="col-lg-3 col-sm-3 col-xs-12">
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/home_logos/humphrey_village.jpg"/>
+    </div>
+    <div class="col-lg-3 col-sm-3 col-xs-12">
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/home_logos/ashmun_flats.png"/>
+    </div>
+
+</div>
 
 <?php get_footer(); ?>

@@ -274,6 +274,15 @@ h2, h3{
     margin: 8px 0;
 }
 
+.gray_bar div{
+    text-align: center;
+}
+
+.gray_bar img{
+    max-height: 80px;
+    margin-top: 8px;
+}
+
 .home .property-item-3{
     border-right: none;
 }
