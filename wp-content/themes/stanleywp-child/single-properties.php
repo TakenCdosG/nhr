@@ -64,8 +64,8 @@
               if(get_post_meta($post->ID, 'outdoor_space', true) != ""){?>
                 <span><strong>Outdoor Space</strong></span>
                 <?php echo get_post_meta($post->ID, 'outdoor_space', true); ?>
-              </div>
               <?php } ?>
+            </div>
             </div>
             <div style="margin-top:20px;">
               <ul class="single_thumbnails ">
