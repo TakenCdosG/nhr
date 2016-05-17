@@ -22,17 +22,20 @@ body p{
 .single-paragraph p{
     margin-bottom: 35px;
 }
+
 .single-property span{
     display: block;
     margin-bottom: 12px;
 }
+
 .single-property ul{
     list-style-type: disc;
     padding-left: 15px;
     margin-bottom: 10px;
 }
+
 .single-property ul li{
-    margin-left: 1.5em !important;
+    margin-left: 1em !important;
 }
 .single-property .button{
     width:100%;
