@@ -25,8 +25,8 @@
             <?php 
               if (get_post_meta($post->ID, 'visit_link', true) != ""){
             ?>
-            <div class="basic button">
-              <a href="<?php echo get_post_meta($post->ID, 'visit_link', true); ?>" target="_blank"> <?php echo get_post_meta($post->ID, 'visit_button', true); ?> </a>
+            <div >
+              <a class="basic button" href="<?php echo get_post_meta($post->ID, 'visit_link', true); ?>" target="_blank"> <?php echo get_post_meta($post->ID, 'visit_button', true); ?> </a>
             </div>
             <?php } ?>
             </div>

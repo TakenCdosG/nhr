@@ -45,11 +45,10 @@ body p{
     text-align: center;
     font-size: 20px;
     margin-bottom: 25px;
-}
-.single-property .button a{
-    color:#ffffff;
+    color: #ffffff;
     text-decoration: none;
 }
+
 .single-property .block_one{
     word-wrap: break-word;
     background-color:#dbdbdb;
@@ -58,6 +57,7 @@ body p{
     font-weight: normal;
     font-style: normal;
 }
+
 .single-property .block_one ul {
     -moz-column-count: 2;
     -moz-column-gap: 20px;
@@ -184,20 +184,9 @@ a.more:hover{
 .basic.button{
     display: inline;
     width: auto;
-    padding:10px 70px;
+    padding:10px 116px;
 }
-.single-property .basic.button{
-     background: none;
- }
-.single-property .basic.button a{
-    width: 100%;
-    background-color: #272779;
-    text-transform: uppercase;
-    padding: 20px;
-    text-align: center;
-    font-size: 20px;
-    margin-bottom: 25px;
-}
+
 .button{
     font-family: Radikal-Light;
     font-weight: normal;
