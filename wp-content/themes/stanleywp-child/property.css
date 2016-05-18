@@ -227,12 +227,12 @@ ul.single_thumbnails{
     list-style: none;
     display: block;
 }
-.list_carousel li {
+.single-properties .list_carousel li {
     font-size: 40px;
     color: #999;
     text-align: center;
     padding: 0;
-    margin: 6px;
+    margin: 6px 3px !important;
     display: block;
     float: left;
 }
