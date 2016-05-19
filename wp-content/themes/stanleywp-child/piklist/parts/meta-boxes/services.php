@@ -1,13 +1,13 @@
 <?php
 /*
 Title: Services
-Post Type: properties
+Post Type: properties_
 Order: 2
 */
 ?>
 
 <?php
-piklist('field', array(
+/*piklist('field', array(
 'type' => 'checkbox'
 ,'field' => 'services'
 ,'value' => 'option-n' // Sets default to Option 2
@@ -28,7 +28,10 @@ piklist('field', array(
 ,'Dry Cleaning Service' => 'Dry Cleaning Service'
 , 'Parking Security' => 'Parking Security'
 )
-));
+));*/
+
+
+
 ?>
 
 

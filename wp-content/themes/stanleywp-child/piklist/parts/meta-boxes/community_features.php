@@ -1,6 +1,6 @@
 <?php
 /*
-Title: Parking
+Title: Community Features
 Post Type: properties
 Order: 4
 */
@@ -9,9 +9,9 @@ Order: 4
 <?php
 piklist('field', array(
  'type' => 'editor'
- ,'field' => 'parking'
- ,'label' => 'Parking Information'
- ,'description' => 'Parking Details'
+ ,'field' => 'community_features'
+ ,'label' => 'Community Features'
+ ,'description' => 'Community Features Details'
  ,'options' => array (
      'media_buttons' => false
      ,'teeny' => true

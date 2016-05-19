@@ -1,13 +1,13 @@
 <?php
 /*
 Title: Features
-Post Type: properties
+Post Type: properties_
 Order: 1
 */
 ?>
 
 <?php
-piklist('field', array(
+/*piklist('field', array(
 'type' => 'checkbox'
 ,'field' => 'features'
 ,'value' => 'option-n' // Sets default to Option 2
@@ -28,5 +28,5 @@ piklist('field', array(
     ,'Tub/Shower' => 'Tub/Shower'
     ,'Handrails' => 'Handrails'
 )
-));
+));*/
 ?>

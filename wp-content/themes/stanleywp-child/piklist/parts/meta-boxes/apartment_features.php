@@ -1,6 +1,6 @@
 <?php
 /*
-Title: Property Information
+Title: Apartment Features
 Post Type: properties
 Order: 3
 */
@@ -21,9 +21,9 @@ Order: 3
 <?php
 piklist('field', array(
  'type' => 'editor'
- ,'field' => 'property_information'
- ,'label' => 'Property Information'
- ,'description' => 'Property Details'
+ ,'field' => 'apartment_features'
+ ,'label' => 'Apartment Features'
+ ,'description' => 'Apartment Features Details'
  ,'options' => array (
      'media_buttons' => false
      ,'teeny' => true

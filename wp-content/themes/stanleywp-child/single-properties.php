@@ -24,48 +24,20 @@
             <?php the_content(); ?>
             <br/>
             <div class="row features">
-              <?php if(get_post_meta($post->ID, 'features', true) != ""){?>
-              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                <span><strong>Features</strong></span>
-                <ul>
-                  <?php $feature = get_post_meta($post->ID, 'features'); 
-                    $valor = "";
-                    foreach ($feature as $valor) {
-                      echo '<li>'.$valor.'</li>';
-                    }
-                  ?>
-                </ul>
+              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+              <?php if(get_post_meta($post->ID, 'apartment_features', true) != ""){?>
+                <span><strong>Apartment Features</strong></span>
+                <?php echo get_post_meta($post->ID, 'apartment_features', true); ?>
+                <br/>
               </div>
+              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
               <?php }
-              if(get_post_meta($post->ID, 'services', true) != ""){?>
-              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" >
-                <span><strong>Services</strong></span>
-                <ul>
-                  <?php $service = get_post_meta($post->ID, 'services'); 
-                    $valor = "";
-                    foreach ($service as $valor) {
-                      echo '<li>'.$valor.'</li>';
-                    }
-                  ?>
-                </ul>
+              if(get_post_meta($post->ID, 'community_features', true) != ""){?>
+                <span><strong>Community Features</strong></span>
+                <?php echo get_post_meta($post->ID, 'community_features', true); ?>
+                <br/>
+              <?php } ?>
               </div>
-              <?php } ?>
-              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" >
-                <?php if(get_post_meta($post->ID, 'property_information', true) != ""){?>
-                <span><strong>Property Information</strong></span>
-                <?php echo get_post_meta($post->ID, 'property_information', true); ?>
-                <br/>
-                <?php }
-              if(get_post_meta($post->ID, 'parking', true) != ""){?>
-                <span><strong>Parking</strong></span>
-                <?php echo get_post_meta($post->ID, 'parking', true); ?>
-                <br/>
-                <?php }
-              if(get_post_meta($post->ID, 'outdoor_space', true) != ""){?>
-                <span><strong>Outdoor Space</strong></span>
-                <?php echo get_post_meta($post->ID, 'outdoor_space', true); ?>
-              <?php } ?>
-            </div>
             </div>
             <div style="margin-top:20px;">
               <ul class="single_thumbnails ">

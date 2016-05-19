@@ -1,13 +1,13 @@
 <?php
 /*
 Title: Outdoor Space
-Post Type: properties
+Post Type: properties_
 Order: 5
 */
 ?>
 
 <?php
-piklist('field', array(
+/*piklist('field', array(
  'type' => 'editor'
  ,'field' => 'outdoor_space'
  ,'label' => 'Outdoor Space'
@@ -16,7 +16,7 @@ piklist('field', array(
      'media_buttons' => false
      ,'teeny' => true
     )
- ));
+ ));*/
 ?>
 
 
