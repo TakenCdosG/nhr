@@ -111,8 +111,10 @@
                  $image_ids = get_post_meta($post->ID, 'upload_media',true);
                  if ($image_ids == "") {
                      $image_ids = get_post_meta($my_id, 'upload_media');
+                     shuffle($image_ids);
                  }else {
                      $image_ids = get_post_meta($post->ID, 'upload_media');
+                     shuffle($image_ids);
                  }
                  foreach ($image_ids as $image)
                  {
