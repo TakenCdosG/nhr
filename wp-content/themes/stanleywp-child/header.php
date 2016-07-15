@@ -105,16 +105,16 @@
      </div>           
 </nav>
      <div id="header_slider">
-         <div class="fotorama" data-maxheight="500" data-width="100%" data-fit="cover" data-nav="false">
+         <div class="fotorama" data-maxheight="500" data-width="100%" data-fit="cover" data-nav="false" data-autoplay="true">
                  <?php
                  $my_id = $wpdb->get_var("SELECT ID FROM $wpdb->posts WHERE post_name = 'home'");
                  $image_ids = get_post_meta($post->ID, 'upload_media',true);
                  if ($image_ids == "") {
                      $image_ids = get_post_meta($my_id, 'upload_media');
-                     shuffle($image_ids);
+                     //shuffle($image_ids);
                  }else {
                      $image_ids = get_post_meta($post->ID, 'upload_media');
-                     shuffle($image_ids);
+                     //shuffle($image_ids);
                  }
                  foreach ($image_ids as $image)
                  {
@@ -125,7 +125,7 @@
                  ?>
          </div>
         <!-- <?php /*if(is_front_page()){*/?>
-         <div id="dark_overlay">JODER</div>
+         <div id="dark_overlay"></div>
          --><?php /*} */?>
      </div>
         <div class="apartments_search"><a href="/all-properties"> <?php if(pll_current_language() == 'es'){echo "Encontrar un Apartmento &#10095;"; }else{echo "Find an Apartment &#10095;";}  ?></a> </div>
