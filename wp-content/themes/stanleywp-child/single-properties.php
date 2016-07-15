@@ -83,7 +83,7 @@
             <div class="button">
               <?php $href = wp_get_attachment_url(get_post_meta($post->ID, 'apply_now', true)); 
               ?>
-              <a href="<?php echo $href != "" ? $href : "#" ?>" target="<?php echo $href != "" ? "_blank" : "_self" ?>">
+              <a style="color:#fff !important" href="<?php echo $href != "" ? $href : "#" ?>" target="<?php echo $href != "" ? "_blank" : "_self" ?>">
                 <?php echo get_post_meta($post->ID, 'apply_now_button', true); ?>
               </a>
             </div>
