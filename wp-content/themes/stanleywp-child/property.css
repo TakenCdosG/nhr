@@ -128,20 +128,23 @@ a.more:hover{
 }
 .callto{
     background-color:#616165;
-    padding: 50px 40px;
+    padding: 5px 40px;
     margin:20px 0 50px 0;
+    text-align: center;
 }
 .callto p, .callto h3, .callto a, .callto a:hover{
     text-decoration: none;
     color:#fff;
+    font-size: 30px;
 }
-.callto .button{
+.callto .button a{
     text-align: center;
-    margin-top:15px;
+    margin:15px auto;
     font-size: 20px;
-    padding:20px 15px;
+    padding:20px 35px;
     color:#fff;
     background-color: #e47818;
+    display: table;
 }
 
 /* BASIC PAGE */

@@ -46,11 +46,9 @@ get_header();
 
   if(get_post_meta($post->ID, 'callto_title', true) == "" && get_post_meta($post->ID, 'callto_subtitle', true) == "" && get_post_meta($post->ID, 'callto_button', true) == "" ){}else{ ?>
   <div class="row callto">
-    <div class="col-lg-6 col-md-6">
+    <div class="col-lg-12 col-md-12">
       <h3><?php echo (get_post_meta($post->ID, 'callto_title', true)); ?></h3>
-      <p><?php echo get_post_meta($post->ID, 'callto_subtitle', true); ?></p>
-    </div>
-    <div class="col-lg-6 col-md-6">
+      <div style="clear:both;"></div>
       <?PHP if(get_post_meta($post->ID, 'callto_link', true)!= ""){ ?>
       <div class="button">
         <a href="<?php echo get_post_meta($post->ID, 'callto_link', true);?>"><?php echo get_post_meta($post->ID, 'callto_button', true) != "" ? get_post_meta($post->ID, 'callto_button', true) : 'VIEW ALL AVAILABLE APARTAMENTS'; ?></a>
