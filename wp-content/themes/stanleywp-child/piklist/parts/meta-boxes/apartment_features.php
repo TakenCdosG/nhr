@@ -20,6 +20,13 @@ Order: 3
 
 <?php
 piklist('field', array(
+ 'type' => 'text'
+ ,'field' => 'apartment_features_title'
+ ,'label' => 'Title'
+ ,'description' => 'Leave blank for "Apartment Features" text'
+ ));
+
+piklist('field', array(
  'type' => 'editor'
  ,'field' => 'apartment_features'
  ,'label' => 'Apartment Features'
