@@ -259,12 +259,12 @@ h2, h3{
 }
 
 .home .property-item h3{
-    font-size: 24px;
+    font-size: 26px;
     text-transform: uppercase;
     background-color: #F0F0F0;
     margin: 0;
     height: 95px;
-    padding-top: 23px 20px 0 20px;
+    padding-top: 23px;
     text-align: center;
 }
 
@@ -338,7 +338,8 @@ h2, h3{
 }
 
 .home .text-information p {
-    line-height: 20px;
+    line-height: 16px;
+    font-size: 14px;
 }
 /* Small devices (tablets, 768px and up) */
 @media (min-width:768px) {
@@ -412,10 +413,6 @@ input[type=text], input[type=email]{
     }
     .site-logo img{
         height:auto;
-    }
-    .home .property-item h3{
-        font-size: 20px;
-        padding: 23px 10px 0 10px;
     }
 }
 @media screen and (max-width: 767px) {
