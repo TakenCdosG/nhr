@@ -168,6 +168,9 @@ a.more:hover{
     background-color:#dbdbdb;
     padding:20px 35px;    
 }
+.block_two.basic a{
+    color:#000;
+}
 .single-property .block_two.basic ul li{
     margin-bottom: 15px;
 }
