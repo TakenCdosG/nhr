@@ -259,12 +259,12 @@ h2, h3{
 }
 
 .home .property-item h3{
-    font-size: 26px;
+    font-size: 24px;
     text-transform: uppercase;
     background-color: #F0F0F0;
     margin: 0;
     height: 95px;
-    padding-top: 23px;
+    padding-top: 23px 20px 0 20px;
     text-align: center;
 }
 
@@ -412,6 +412,10 @@ input[type=text], input[type=email]{
     }
     .site-logo img{
         height:auto;
+    }
+    .home .property-item h3{
+        font-size: 20px;
+        padding: 23px 10px 0 10px;
     }
 }
 @media screen and (max-width: 767px) {
