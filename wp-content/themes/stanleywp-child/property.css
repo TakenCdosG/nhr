@@ -65,7 +65,7 @@ body p{
     -webkit-column-gap: 20px;
     column-count: 2;
     column-gap: 20px;
-    list-style-position: inside;
+    /*list-style-position: inside;*/
 }
 .single-property .block_one ul li{
     margin-bottom: 15px;
