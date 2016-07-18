@@ -360,23 +360,23 @@ h2, h3{
 .form-text p{
     color: #272779;
 }
-#wpcf7-f32-p33-o1 ::-webkit-input-placeholder {
+#wpcf7-f110-p108-o1 ::-webkit-input-placeholder {
     font-size: 14px;
     color: #333;
 }
-#wpcf7-f32-p33-o1 :-moz-placeholder { /* older Firefox*/
+#wpcf7-f110-p108-o1 :-moz-placeholder { /* older Firefox*/
     font-size:14px;
     color: #333;
 }
-#wpcf7-f32-p33-o1 ::-moz-placeholder { /* Firefox 19+ */
+#wpcf7-f110-p108-o1 ::-moz-placeholder { /* Firefox 19+ */
     font-size: 14px;
     color: #333;
 }
-#wpcf7-f32-p33-o1 :-ms-input-placeholder {
+#wpcf7-f110-p108-o1 :-ms-input-placeholder {
     font-size: 14px;
     color: #333;
 }
-#wpcf7-f32-p33-o1 input[type=submit]{
+.submit-form{
     background-color: #e47818;
     border-color: #e47818;
     color: #FFF;
@@ -384,7 +384,7 @@ h2, h3{
     border: none;
     padding: 10px 20px;
 }
-#wpcf7-f32-p33-o1 textarea{
+#wpcf7-f110-p108-o1 textarea{
     border-color: #DADADA;
     height: 374px;
 }
