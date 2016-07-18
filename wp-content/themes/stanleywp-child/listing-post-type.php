@@ -72,7 +72,6 @@ function custom_post_type() {
 $args = array(
 'label'               => __( 'Properties', 'NHR' ),
 'description'         => __( 'Properties', 'NHR' ),
-'labels'              => $labels,
 // Features in Post Editor
 'supports'            => array( 'title', 'author', 'comments'  ),
 // Taxonomies or custom taxonomy.

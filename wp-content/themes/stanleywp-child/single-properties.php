@@ -26,14 +26,18 @@
             <div class="row features">
               <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
               <?php if(get_post_meta($post->ID, 'apartment_features', true) != ""){?>
-                <span><strong> <?php echo !empty(get_post_meta($post->ID, 'apartment_features_title', true)) ? get_post_meta($post->ID, 'apartment_features_title', true) : 'Apartment Features' ?> </strong></span>
+                <span><strong> <?php 
+                $apartment_features_title = get_post_meta($post->ID, 'apartment_features_title', true);
+                echo !empty($apartment_features_title) ? $apartment_features_title : 'Apartment Features' ?> </strong></span>
                 <?php echo get_post_meta($post->ID, 'apartment_features', true); ?>
                 <br/>
               </div>
               <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
               <?php }
               if(get_post_meta($post->ID, 'community_features', true) != ""){?>
-                <span><strong><?php echo !empty(get_post_meta($post->ID, 'community_features_title', true)) ? get_post_meta($post->ID, 'community_features_title', true) : 'Community Features' ?></strong></span>
+                <span><strong><?php 
+                $community_features_title = get_post_meta($post->ID, 'community_features_title', true);
+                echo !empty($community_features_title) ? $community_features_title : 'Community Features' ?> </strong></span>
                 <?php echo get_post_meta($post->ID, 'community_features', true); ?>
                 <br/>
               <?php } ?>
