@@ -108,20 +108,34 @@
          <div class="fotorama" data-maxheight="500" data-width="100%" data-fit="cover" data-nav="false" data-autoplay="3000" data-transition="crossfade">
                  <?php
                  $my_id = $wpdb->get_var("SELECT ID FROM $wpdb->posts WHERE post_name = 'home'");
-                 $image_ids = get_post_meta($post->ID, 'upload_media',true);
+                 $image_ids = get_post_meta($post->ID, 'header_images');
                  if ($image_ids == "") {
-                     $image_ids = get_post_meta($my_id, 'upload_media');
+                     $image_ids = get_post_meta($my_id, 'header_images');
                      shuffle($image_ids);
                  }else {
-                     $image_ids = get_post_meta($post->ID, 'upload_media');
+                     $image_ids = get_post_meta($post->ID, 'header_images');
                      shuffle($image_ids);
                  }
-                 foreach ($image_ids as $image)
-                 {
-                    $myupload = get_post($image);
-                    $alt_text = get_post_meta($image, '_wp_attachment_image_alt', true);
-                     echo '<img  src="' . wp_get_attachment_url($image) . '" alt="'.$alt_text.'" />';
-                 }
+
+                     foreach ($image_ids as $image)
+                     {
+                         foreach ($image as $image_detail)
+                         {
+
+                             $banner = $image_detail['image'][0];
+                             $bannertext = $image_detail['img_texts'];
+                 ?>
+                             <div class="banner_image" data-img="<?php echo wp_get_attachment_url($banner); ?>"><span class="bannertext"><?php
+                                foreach($bannertext as $text_img){
+                                    echo $text_img;
+                                }
+                             ?>
+                             </span></div>
+
+                 <?php
+                         }
+                     }
+
                  ?>
          </div>
         <!-- <?php /*if(is_front_page()){*/?>
