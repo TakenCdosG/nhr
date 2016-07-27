@@ -105,7 +105,7 @@
      </div>           
 </nav>
      <div id="header_slider">
-         <div class="fotorama" data-maxheight="500" data-width="100%" data-fit="cover" data-nav="false" data-autoplay="3000" data-transition="crossfade">
+         <div class="fotorama" data-maxheight="500" data-width="100%" data-fit="cover" data-nav="false" data-autoplay="3000" data-transition="crossfade" data-shuffle="true">
                  <?php
                  $my_id = $wpdb->get_var("SELECT ID FROM $wpdb->posts WHERE post_name = 'home'");
                  $image_ids = get_post_meta($post->ID, 'header_images');
