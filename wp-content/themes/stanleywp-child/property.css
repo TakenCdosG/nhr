@@ -47,13 +47,14 @@ body p{
     margin-bottom: 25px;
     color: #ffffff;
     text-decoration: none;
+    font-weight: bolder;
 }
 
 .single-property .block_one{
     word-wrap: break-word;
-    background-color:#dbdbdb;
+    background-color:rgba(227, 120, 24, .5);
     padding: 20px 35px;
-    font-family: Radikal-Medium;
+    font-family: Radikal-Light;
     font-weight: normal;
     font-style: normal;
 }
@@ -72,9 +73,9 @@ body p{
 }
 .single-property .block_two{
     word-wrap: break-word;
-    background-color:#999999;
+    background-color:#E37818;
     padding: 20px 35px;
-    font-family: Radikal-Medium;
+    font-family: Radikal-Light;
     font-weight: normal;
     font-style: normal;
 }
