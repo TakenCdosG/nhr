@@ -1,6 +1,6 @@
 <?php
 /*
-Title: Commercial Attributes
+Title: Person Attributes
 Post Type: person
 Order: 1
 */
