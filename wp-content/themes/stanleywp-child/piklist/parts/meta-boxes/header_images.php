@@ -1,7 +1,7 @@
 <?php
     /*
     Title: Header Images
-    Post Type: page
+    Post Type: page, developments, commercial, person
     Order: 1
     Collapse: false
     Tab: Add-More's

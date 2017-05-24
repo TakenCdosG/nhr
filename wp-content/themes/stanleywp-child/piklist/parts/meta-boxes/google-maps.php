@@ -1,7 +1,7 @@
 <?php
     /*
     Title: Google Maps Shortcode
-    Post Type: properties
+    Post Type: properties, developments, commercial
     Order: -2
     */
 ?>

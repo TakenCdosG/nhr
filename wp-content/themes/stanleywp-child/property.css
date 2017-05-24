@@ -8,7 +8,7 @@ body p{
 }
 
 /* SINGLE PROPERTY*/
-.single-property{
+.single-property, .single-person{
     margin-top:45px; 
     margin-bottom:45px;
 }
@@ -234,7 +234,7 @@ ul.single_thumbnails{
     list-style: none;
     display: block;
 }
-.single-properties .list_carousel li {
+.single-properties .list_carousel li, .single-commercial .list_carousel li {
     font-size: 40px;
     color: #999;
     text-align: center;
@@ -326,7 +326,104 @@ a.pp_next, a.pp_previous{
     color: #ffffff;
 }
 
+.main-image img{
+    width:100%;
+    height:auto;
+    margin-top:20px;
+}
+/*Phase 2*/
+.all-developments, .all-person{
+    margin:25px 0;
+}
+.development, .person{
+    margin: 15px 0;
+    text-align: center;
+}
+.development a, .development a:hover{
+    text-decoration: none !important;
+}
+.development img. .person img{
+    max-width: 100%;
+}
+.development h3, .person h3{
+    background-color: #272779 !important;
+    color: #fff;
+    font-size: 22px;
+    padding: 18px;
+    text-align: center;
+}
+.single-commercial .block_three{
+    margin-top: 84px;
+}
+.single-commercial .block_two{
+    margin-top: 25px;
+}
+.grid-sizer, .grid-item{
+    width: 30.3%;
+    margin: 1.5%;
+}
+a:hover, a:focus {
+    text-decoration: none !important;
+}
+.commercial{
+    position: relative;
+    overflow: hidden;
+}
+.commercial h3{
+    font-size: 22px;
+}
+.leased{
+    width: 200px;
+    background: #272779;
+    position: absolute;
+    top: 25px;
+    left: -50px;
+    text-align: center;
+    line-height: 35px;
+    letter-spacing: 1px;
+    color: #f0f0f0;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    top: 25px;
+    right: -60px;
+    left: auto;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+.person{
+    margin-bottom: 80px;
+}
+.person-content h2{
+    font-size:26px;
+    margin-bottom: 20px;
+}
+.person h3{
+    margin-top: 0;
+    z-index: 100;
+    position: relative;
+    padding: 8px 18px !important;
+}
+.person-item{
+    padding:0 30px;
+}
+.person-item img{
+    padding:0 20px;
+}
+@media screen and (max-width: 468px) {
+    .grid-sizer, .grid-item{
+        width:100% !important;
+        margin: 0 !important;
+    }
+}
+
 @media screen and (max-width: 767px) {
+    .masonry-commercial{
+        padding: 0 15px;
+    }
+    .grid-sizer, .grid-item{
+        width:47%;
+        margin: 1.5%;
+    }
     .single-property .button{
         margin-top:40px;
     }
@@ -335,5 +432,8 @@ a.pp_next, a.pp_previous{
     }
     .callto a{
         font-size: 16px;
+    }
+    .single-commercial .block_three{
+        margin-top: 35px;
     }
 }

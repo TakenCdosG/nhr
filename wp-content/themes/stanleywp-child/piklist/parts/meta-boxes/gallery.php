@@ -1,7 +1,7 @@
 <?php
 /*
 Title: Gallery
-Post Type: properties
+Post Type: properties, commercial
 Order: -1
 */
 ?>

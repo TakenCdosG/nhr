@@ -3,7 +3,7 @@
 * CUSTOM POST TYPE FUNCTIONS
 */
 include_once("listing-post-type.php");
-
+include_once("phase2-post-types.php");
 
 function theme_enqueue_styles() {
 
@@ -24,6 +24,16 @@ add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles' );
     wp_enqueue_script(
       'wpex-plugins',
       get_stylesheet_directory_uri() .'/js/plugins.js',
+      array( 'jquery' )
+    );
+    wp_enqueue_script(
+      'masonry',
+      'https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.0/masonry.pkgd.js' , 
+      array( 'jquery' )
+    );
+    wp_enqueue_script(
+      'imagesloaded',
+      'https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js' , 
       array( 'jquery' )
     );
     wp_enqueue_script(
