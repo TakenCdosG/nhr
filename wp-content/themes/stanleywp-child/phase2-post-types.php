@@ -103,22 +103,22 @@ array(
 'labels' => array(
 'name' => __( 'Commercial' ),
 'singular_name' => __( 'Commercial' ),
-'menu_name'           => __( 'Commercial', 'NHR' ),
-'parent_item_colon'   => __( 'Parent Commercial', 'NHR' ),
-'all_items'           => __( 'All Commercial', 'NHR' ),
-'view_item'           => __( 'View Commercial', 'NHR' ),
-'add_new_item'        => __( 'Add New Commercial',  'NHR' ),
-'add_new'             => __( 'Add New Commercial', 'NHR' ),
-'edit_item'           => __( 'Edit Commercial', 'NHR' ),
-'update_item'         => __( 'Update Commercial', 'NHR' ),
-'search_items'        => __( 'Search Commercial', 'NHR' ),
-'not_found'           => __( 'Not Commercial Found', 'NHR' ),
-'not_found_in_trash'  => __( 'Not Commercial Found in Trash', 'NHR' )
+'menu_name'           => __( 'Commercial Properties', 'NHR' ),
+'parent_item_colon'   => __( 'Parent Commercial Properties', 'NHR' ),
+'all_items'           => __( 'All Commercial  Properties', 'NHR' ),
+'view_item'           => __( 'View Commercial Property', 'NHR' ),
+'add_new_item'        => __( 'Add New Commercial Property',  'NHR' ),
+'add_new'             => __( 'Add New Commercial Property', 'NHR' ),
+'edit_item'           => __( 'Edit Commercial Property', 'NHR' ),
+'update_item'         => __( 'Update Commercial Property', 'NHR' ),
+'search_items'        => __( 'Search Commercial Property', 'NHR' ),
+'not_found'           => __( 'Not Commercial Property Found', 'NHR' ),
+'not_found_in_trash'  => __( 'Not Commercial Property Found in Trash', 'NHR' )
 
 ),
 'public' => true,
 'has_archive' => false,
-'rewrite' => array('slug' => 'commercial'),
+'rewrite' => array('slug' => 'commercial-properties'),
 'menu_position' => 5,
 'menu_icon' => get_stylesheet_directory_uri() . "/images/listings.png",
 )
@@ -137,8 +137,8 @@ function custom_post_type_commercial() {
 // Set other options for Custom Post Type
 
 $args = array(
-'label'               => __( 'Commercial', 'NHR' ),
-'description'         => __( 'Commercial', 'NHR' ),
+'label'               => __( 'Commercial Properties', 'NHR' ),
+'description'         => __( 'Commercial  Properties', 'NHR' ),
 // Features in Post Editor
 'supports'            => array( 'title', 'author', 'comments'  ),
 // Taxonomies or custom taxonomy.
@@ -205,7 +205,7 @@ array(
 ),
 'public' => true,
 'has_archive' => false,
-'rewrite' => array('slug' => 'person'),
+'rewrite' => array('slug' => 'about-people'),
 'menu_position' => 5,
 'menu_icon' => get_stylesheet_directory_uri() . "/images/listings.png",
 )
