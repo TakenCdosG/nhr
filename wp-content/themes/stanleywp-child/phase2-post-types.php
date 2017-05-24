@@ -30,7 +30,7 @@ array(
 
 ),
 'public' => true,
-'has_archive' => true,
+'has_archive' => false,
 'rewrite' => array('slug' => 'developments'),
 'menu_position' => 5,
 'menu_icon' => get_stylesheet_directory_uri() . "/images/listings.png",
@@ -117,7 +117,7 @@ array(
 
 ),
 'public' => true,
-'has_archive' => true,
+'has_archive' => false,
 'rewrite' => array('slug' => 'commercial'),
 'menu_position' => 5,
 'menu_icon' => get_stylesheet_directory_uri() . "/images/listings.png",
@@ -204,7 +204,7 @@ array(
 
 ),
 'public' => true,
-'has_archive' => true,
+'has_archive' => false,
 'rewrite' => array('slug' => 'person'),
 'menu_position' => 5,
 'menu_icon' => get_stylesheet_directory_uri() . "/images/listings.png",
