@@ -335,7 +335,11 @@ a.pp_next, a.pp_previous{
 .all-developments, .all-person{
     margin:25px 0;
 }
-.development, .person{
+.development{
+    margin: 25px 0;
+    text-align: center;   
+}
+.person{
     margin: 15px 0;
     text-align: center;
 }

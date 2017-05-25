@@ -2,8 +2,8 @@
     'use strict';
 
     function stickyFooter(){
-    	if($('#wrapper').height() < $(window).height() - ($("header").height() + $('#footer').height())){
-        	var new_height = $(window).height() - ($("header").height() + $('#footer').height() + $('#wpadminbar').height() + 64);
+    	if($('#wrapper').outerHeight() < $(window).outerHeight() - ($("header").outerHeight() + $('#footer').outerHeight())){
+        	var new_height = $(window).outerHeight() - ($("header").outerHeight() + $('#footer').outerHeight() + $('#wpadminbar').outerHeight() );
             $('#wrapper').height(new_height);
         }else{
         	$('#wrapper').css('height','auto');

@@ -7,7 +7,7 @@ global $post;
 $content = $post->post_content;
 ?>
 
-<div class="all-developments">
+<div class="all-developments" stylee="margin-bottom:90px">
   <div class="container"> 
     <div class="row">
       <div class="col-md-12">
