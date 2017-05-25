@@ -353,7 +353,10 @@ a.pp_next, a.pp_previous{
     text-align: center;
 }
 .single-commercial .block_three{
-    margin-top: 84px;
+    margin-top: 25px;
+}
+.single-commercial .commercial-sidebar{
+    margin-top: 59px;
 }
 .single-commercial .block_two{
     margin-top: 25px;

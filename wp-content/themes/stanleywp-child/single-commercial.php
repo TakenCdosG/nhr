@@ -17,8 +17,9 @@
           <?php 
                 $gmaps_sc = get_post_meta($post->ID, 'gmaps_sc', true); 
                 $commercial_button = get_post_meta($post->ID, 'commercial_button', true);
+                $commercial_links = get_post_meta($post->ID, 'commercial_links', true);
           ?>
-          <div class="single-paragraph <?php echo $gmaps_sc == "" ? 'col-lg-12' : 'col-lg-8 col-md-8 col-sm-8 col-xs-12' ?> ">
+          <div class="single-paragraph <?php echo $gmaps_sc == "" && $commercial_links == "" ? 'col-lg-12' : 'col-lg-8 col-md-8 col-sm-8 col-xs-12' ?> ">
             <h2><?php the_title(); ?></h2>
             <div class="main-image">
               <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="">
@@ -62,7 +63,7 @@
             <?php the_content(); ?>
             <div class="commercial-button"><?php echo $commercial_button == "" ? '' : '<a class="more" href="'.$commercial_button.'">Visit Their Website</a>' ?></div>
           </div>
-          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" style ="<?php echo $gmaps_sc == "" ? 'display:none;' : 'display:block;' ?> ">
+          <div class="commercial-sidebar col-lg-4 col-md-4 col-sm-4 col-xs-12" style ="<?php echo $gmaps_sc == "" && $commercial_links == "" ? 'display:none;' : 'display:block;' ?> ">
             <?php
               if (get_post_meta($post->ID, 'gmaps_sc', true) != ""){
                   ?>
@@ -71,8 +72,6 @@
                   </div>
               <?php
               }
-            ?>
-            <?php
               if (get_post_meta($post->ID, 'commercial_links', true) != ""){
                   ?>
                   <div class="block_two basic">

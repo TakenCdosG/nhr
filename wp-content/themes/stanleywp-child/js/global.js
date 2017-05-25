@@ -46,6 +46,14 @@ $( window ).load( function() {
 } ); // End on window load
 
 $( document ).ready( function() {
+
+        if($('#wrapper').height() < $(window).height() - ($("header").height() + $('#footer').height())){
+
+        	var new_height = $(window).height() - ($("header").height() + $('#footer').height() + $('#wpadminbar').height() + 64);
+            $('#wrapper').height(new_height);
+        }else{
+            alert('no');
+        }	
 	
 	$('.navbar-toggle').click(function(){
 		$('.navbar-collapse').toggle();
