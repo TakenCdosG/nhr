@@ -54,7 +54,7 @@ $( window ).load( function() {
 } ); // End on window load
 
 $( document ).ready( function() {
-	stickyFooter();
+	//stickyFooter();
 	$( window ).resize(function() {
 	  stickyFooter();
 	});
