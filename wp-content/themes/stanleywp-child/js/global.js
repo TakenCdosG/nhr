@@ -52,7 +52,7 @@ $( document ).ready( function() {
         	var new_height = $(window).height() - ($("header").height() + $('#footer').height() + $('#wpadminbar').height() + 64);
             $('#wrapper').height(new_height);
         }else{
-            alert('no');
+            
         }	
 	
 	$('.navbar-toggle').click(function(){
