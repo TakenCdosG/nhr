@@ -1,5 +1,12 @@
 ( function($) {
     'use strict';
+
+    function stickyFooter(){
+    	if($('#wrapper').height() < $(window).height() - ($("header").height() + $('#footer').height())){
+        	var new_height = $(window).height() - ($("header").height() + $('#footer').height() + $('#wpadminbar').height() + 64);
+            $('#wrapper').height(new_height);
+        }
+    }
 	
 $( window ).load( function() {
 	//Carousel
@@ -43,18 +50,15 @@ $( window ).load( function() {
 		   }
 		});
 	}else{}
+	stickyFooter();
 } ); // End on window load
 
 $( document ).ready( function() {
+	stickyFooter();
+	$( window ).resize(function() {
+	  stickyFooter();
+	});
 
-        if($('#wrapper').height() < $(window).height() - ($("header").height() + $('#footer').height())){
-
-        	var new_height = $(window).height() - ($("header").height() + $('#footer').height() + $('#wpadminbar').height() + 64);
-            $('#wrapper').height(new_height);
-        }else{
-            
-        }	
-	
 	$('.navbar-toggle').click(function(){
 		$('.navbar-collapse').toggle();
 	});
